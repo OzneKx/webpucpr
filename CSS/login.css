@@ -95,6 +95,11 @@ body {
   outline: none;
 }
 
+.div-login {
+  width: 100vw;
+  height: 100%;
+}
+
 .input input {
   margin-bottom: 25px;
   background-color: rgb(82, 82, 82);
@@ -169,7 +174,13 @@ body {
 
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
-@media(max-width: 720px) {
+@media(max-width: 960px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .wrapper .div-login {
     display: flex;
     justify-content: center;
