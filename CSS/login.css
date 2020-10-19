@@ -1,0 +1,167 @@
+/* === PAGE FONT IMPORT (FONT-FAMYLI) === */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+
+
+
+/* === HTML TAGS STYLIZATION === */
+* {
+  margin: 0;
+  font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
+  text-rendering: optimizeLegibility;
+  color: rgb(201, 204, 207);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(185, 51, 51);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color:	rgba(0, 0, 0, 0.808);
+}
+
+
+
+
+
+/* === LOGIN FORM === */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-bottom: 55px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .image {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .div-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.wrapper .div-login .input {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 25%;
+}
+
+.wrapper .div-login .input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input input {
+  margin-bottom: 25px;
+  background-color: rgb(82, 82, 82);
+}
+
+.input input::placeholder {
+  color: rgb(201, 204, 207);
+}
+
+.input p {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/* === LOGIN BUTTON === */
+.wrap-button {
+  background-color: rgb(97, 47, 47);
+  border-radius: 8px;
+  width: 50%;
+  height: 48px;
+  border: 2px solid transparent;
+  transition: .2s;
+  margin-bottom: 20px;
+}
+
+.wrap-button a {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(201, 204, 207);
+  font-size: 18px;
+  transition: .2s;
+}
+
+.wrap-button:hover {
+  background-color: rgba(97, 47, 47, 0.534);
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.wrap-button a:hover {
+  color: rgb(154, 158, 161);
+  background-color: rgba(128, 28, 28, 0.534);
+}
+
+
+.wrapper .div-login .form .wrap-button:hover {
+  color: black;
+  border: 2px solid #000;
+  background-color: transparent;
+}
+
+
+
+
+
+/* === FOOTER === */
+
+
+
+
+
+/* === RESPONSIVE SIZE LIMITATIONS === */
+@media(max-width: 1000px) {
+  .wrapper {
+    display: flex;
+    margin: 0 32px;
+  }
+}
