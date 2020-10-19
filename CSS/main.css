@@ -72,16 +72,13 @@ body {
   width: 30px;
   height: 30px;
   margin-left: 5px;
+  margin-right: 5px;
 }
 
 .top-content .menu {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.top-content .menu a {
-  justify-content: space-between;
 }
 
 .top-content .right-icons {
