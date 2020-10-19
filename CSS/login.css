@@ -169,9 +169,16 @@ body {
 
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
-@media(max-width: 1000px) {
-  .wrapper {
+@media(max-width: 720px) {
+  .wrapper .div-login {
     display: flex;
-    margin: 0 32px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .wrapper .image {
+    background-image: none;
+    display: none;
   }
 }
