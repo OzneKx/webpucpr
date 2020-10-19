@@ -35,3 +35,74 @@ body {
   overflow-x: hidden;
   background-color:	rgba(0, 0, 0, 0.808);
 }
+
+
+
+
+
+/* === HEADER STYLIZATION === */
+.slogan {
+  margin-top: 7px;
+  margin-bottom: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* === TOP MENU STYLIZATION === */
+.top-content {
+  background: rgb(185, 51, 51);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-content .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-content .logo img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.top-content .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-content .menu a {
+  justify-content: space-between;
+}
+
+.top-content .right-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-content .right-icons a {
+  margin-right: 5px;
+}
+
+.mid-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+}
+
+.mid-content img {
+  width: 100%;
+  object-fit: cover;
+}
