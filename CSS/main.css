@@ -15,7 +15,7 @@
 
 a {
   text-decoration: none;
-  color: rgb(185, 51, 51);
+  color: rgba(185, 51, 51, 0.795);
 }
 
 p {
@@ -33,7 +33,7 @@ body {
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-color:	rgba(0, 0, 0, 0.808);
+  background-color:	rgba(0, 0, 0, 0.904);
 }
 
 
@@ -56,7 +56,7 @@ body {
 
 /* === TOP MENU STYLIZATION === */
 .top-content {
-  background: rgb(185, 51, 51);
+  background-color: rgba(85, 20, 20, 0.747);
   display: flex;
   justify-content: space-between;
   align-items: center;
