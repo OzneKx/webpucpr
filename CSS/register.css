@@ -30,7 +30,7 @@ body {
   height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-color:	rgba(0, 0, 0, 0.904);
+  background-color:	rgba(0, 0, 0, 0.863);
 }
 
 
@@ -98,7 +98,7 @@ body {
 
 .input input {
   margin-bottom: 25px;
-  background-color: rgb(36, 35, 35);
+  background-color: rgba(0, 0, 0, 0.226);
 }
 
 .input input::placeholder {

@@ -1,0 +1,37 @@
+/* === PAGE FONT IMPORT (FONT-FAMYLI) === */
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+
+
+
+/* === HTML TAGS STYLIZATION === */
+* {
+  margin: 0;
+  font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
+  text-rendering: optimizeLegibility;
+  color: rgb(201, 204, 207);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(185, 51, 51);
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color:	rgba(0, 0, 0, 0.863);
+}

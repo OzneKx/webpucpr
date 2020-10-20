@@ -103,3 +103,35 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+/* === RESPONSIVE SIZE LIMITATIONS === */
+@media(max-width: 960px) {
+  .slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100vw;
+  }
+
+  .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .top-content .logo {
+    background-image: none;
+    display: none;
+  }
+
+  .top-content a {
+    font-size: 12px;
+  }
+}
+
