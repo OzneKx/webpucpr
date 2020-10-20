@@ -5,6 +5,7 @@
 /* === HTML TAGS STYLIZATION === */
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
   text-rendering: optimizeLegibility;
   color: rgb(201, 204, 207);
@@ -12,7 +13,6 @@
 
 a {
   text-decoration: none;
-  color: rgb(201, 204, 207);
 }
 
 p {
@@ -24,10 +24,15 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
 body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
   background-color:	rgba(0, 0, 0, 0.863);
@@ -134,7 +139,6 @@ body {
 
   box-sizing: border-box;
   text-decoration: none;
-  color: rgb(201, 204, 207);
   font-size: 18px;
   transition: .2s;
 }
@@ -146,7 +150,6 @@ body {
 }
 
 .wrap-button a:hover {
-  color: rgb(154, 158, 161);
   background-color: rgba(128, 28, 28, 0.534);
 }
 
