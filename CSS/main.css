@@ -109,6 +109,8 @@ body {
 /* === MID MENU STYLIZATION === */
 .mid-content {
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
 
   color: rgb(201, 204, 207);
 }
@@ -123,22 +125,21 @@ body {
   position: relative;
 }
 
-.mid-content p {
+.mid-content .text {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   position: absolute;
-  margin-left: 12px;
+
+  margin-bottom: 22px;
+}
+
+.mid-content .text p {
+  font-size: 18px;
 }
 
 .mid-content .wrap-button {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  margin-left: 12px;
-  margin-top: 28px;
+  width: 100%;
 }
-
 
 
 
@@ -149,7 +150,7 @@ body {
   background-color: rgba(85, 20, 20, 0.747);
   border-radius: 8px;
   width: 19%;
-  height: 36px;
+  height: 50px;
   border: 2px solid transparent;
   transition: .2s;
   margin-top: 5px;
