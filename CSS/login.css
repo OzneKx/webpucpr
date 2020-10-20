@@ -171,6 +171,10 @@ body {
 
 
 /* === NÃO CADASTRADO === */
+.wrapper .div-login .not-registered {
+margin-bottom: 50px;
+}
+
 .wrapper .div-login .not-registered strong {
   background-color:rgba(85, 20, 20, 0.747);
 }
@@ -183,12 +187,12 @@ body {
 .footer-content {
   display: flex;
   flex-direction: column;
-  height: 0px;
-  margin-top: 100px;
+  height: 0vh;
 }
 
 .footer-content img {
-  height: 150px;
+  margin-top: 80px;
+  height: 100px;
 }
 
 .footer-content h3 {
