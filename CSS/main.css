@@ -212,20 +212,24 @@ body {
   }
 
   .mid-content .text {
-    width: 23%;
+    width: 40%;
+  }
+
+  .mid-content .text {
+    margin-bottom: 8px;
   }
 
   .mid-content .text p {
-    font-size: 7px;
+    font-size: 12px;
     margin: 0 auto;
   }
 
   .mid-content .text .wrap-button a {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .wrap-button {
-    height: 23px;
+    height: 28px;
   }
 }
 
