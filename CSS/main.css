@@ -82,8 +82,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 2px;
 }
 
 .top-content .menu {
@@ -209,19 +210,27 @@ body {
     display: none;
   }
 
-  .top-content .logo a {
+  .mid-content .text {
+    width: 23%;
+  }
+
+  .mid-content .text p {
+    font-size: 7px;
+    margin: 0 auto;
+  }
+
+  .mid-content .text .wrap-button a {
     font-size: 12px;
   }
 
-  .mid-content h1 {
-    margin-left: 12px;
-    width: 100%;
-  }
-
-  .wrap-button a {
-    font-size: 14px;
+  .wrap-button {
+    height: 23px;
   }
 }
+
+
+
+
 
 @media(max-width: 580px) {
   .top-content .logo a {
