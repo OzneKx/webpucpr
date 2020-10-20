@@ -164,11 +164,23 @@ body {
 
 
 
-/* === REDIRECT === */
-.not-registered .space {
-  color: rgb(97, 47, 47);
+/* === LOGO GUITART === */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  height: 0vh;
 }
 
+.footer-content img {
+  margin-top: 80px;
+  height: 100px;
+}
+
+.footer-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
