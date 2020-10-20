@@ -109,26 +109,34 @@ body {
 /* === MID MENU STYLIZATION === */
 .mid-content {
   display: flex;
-  align-items: center;
 
   color: rgb(201, 204, 207);
-
 }
 
-.mid-content img {
+.mid-content .background {
+  width: 100%;
+}
+
+.mid-content .background img {
   width: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.mid-content h1 {
+.mid-content p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   margin-left: 12px;
-  width: 100%;
 }
 
-.mid-content h1 p {
-  margin-top: 12px;
+.mid-content .wrap-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 28px;
 }
 
 
