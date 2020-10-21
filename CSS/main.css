@@ -363,6 +363,13 @@ body {
   width: 15%;
 }
 
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+}
+
 .review-content .reviews {
   display: flex;
   align-items: center;
@@ -371,6 +378,30 @@ body {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.review-content .reviews .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.review-content .paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.review-content .paragraph p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 
 
 
@@ -428,6 +459,15 @@ body {
   .bottom-content .product1 button {
     font-size: 18px;
   }
+
+  .review-content .reviews .paragraph {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+
 }
 
 
