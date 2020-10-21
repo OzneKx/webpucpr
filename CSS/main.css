@@ -308,6 +308,26 @@ body {
 
 
 
+/* == VIDEO CONTENT STYLIZATION == */
+.video-content {
+  width: 100vw;
+  margin-top: 55px;
+  color: rgb(201, 204, 207);
+}
+
+.video-content .bottom-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-content .bottom-title p {
+  font-size: 24px;
+}
+
+
+
+
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
 @media(max-width: 880px) {
