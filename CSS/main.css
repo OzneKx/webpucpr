@@ -325,6 +325,54 @@ body {
   font-size: 24px;
 }
 
+.video-content .video {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* == REVIEW CONTENT STYLIZATION == */
+.review-content {
+  width: 100vw;
+  margin-top: 55px;
+  color: rgb(201, 204, 207);
+}
+
+.review-content .bottom-content-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-content .bottom-content-review p {
+  font-size: 24px;
+}
+
+.review-content .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-content .stars img {
+  width: 15%;
+}
+
+.review-content .reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 
 
 
