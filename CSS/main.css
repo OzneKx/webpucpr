@@ -209,15 +209,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vh;
 }
 
 .bottom-content .bottom-products .content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -272,7 +272,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .wrap-button2 {
@@ -351,8 +351,6 @@ body {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 35px;
-    margin-bottom: 35px;
     width: 100%;
   }
 
