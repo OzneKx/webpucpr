@@ -230,6 +230,11 @@ body {
   margin-right: 15px;
 }
 
+.bottom-content .product1 p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .bottom-content .product1 img {
   height: 250px;
   width: 250px;
@@ -349,6 +354,14 @@ body {
     margin-top: 35px;
     margin-bottom: 35px;
     width: 100%;
+  }
+
+  .bottom-products .product1 p {
+    font-size: 16px;
+  }
+
+  .bottom-content .product1 button {
+    font-size: 18px;
   }
 }
 
