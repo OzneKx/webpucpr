@@ -362,8 +362,8 @@ body {
 }
 
 .review-content .stars img {
-  height: 250px;
-  width: 250px;
+  height: 160px;
+  width: 160px;
 }
 
 .reviews {
@@ -397,21 +397,21 @@ body {
 .review-content .reviews .paragraph .avatar {
   display: flex;
   align-self: start;
-  margin-bottom: 15px;
-  margin-left: 15px;
+  margin: 0px 0px 15px 15px;
 }
 
 .review-content .reviews .paragraph img {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   margin-bottom: 5px;
 }
 
 .review-content .reviews .paragraph h4 {
-  margin-left: 10px;
+  margin-left: 15px;
   display: flex;
   align-items: center;
+  font-size: 30px;
 }
 
 .review-content .reviews {
@@ -428,6 +428,32 @@ body {
 
 
 
+
+
+/* === CONTACT ME STYLIZATION === */
+.contact-content {
+  margin-top: 35px;
+  width: 100vw;
+}
+
+.contact-content .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-content .contact-info .contact-text {
+  color: rgb(201, 204, 207);
+}
+
+.contact-content .contact-info .contact-text p {
+  margin-top: 8px;
+}
+
+.contact-content .contact-info img {
+  height: 500px;
+  width: 500px;
+}
 
 
 
@@ -494,6 +520,13 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+  }
+
+  .review-content .reviews .paragraph img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
   }
 }
 
