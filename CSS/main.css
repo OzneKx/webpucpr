@@ -52,8 +52,7 @@ body {
 }
 
 .slogan .guitart {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 10px 0 5px 0;
 }
 
 .slogan .slogan-guitart {
@@ -216,8 +215,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0px;
   width: 100%;
 }
 
@@ -226,8 +224,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0px 15px;
 }
 
 .bottom-content .product1 p {
@@ -367,7 +364,6 @@ body {
 .review-content .stars img {
   height: 250px;
   width: 250px;
-  margin-bottom: 20px;
 }
 
 .reviews {
@@ -382,8 +378,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0px;
   width: 100%;
 }
 
@@ -392,8 +387,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 .review-content .paragraph p {
