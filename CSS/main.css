@@ -367,6 +367,7 @@ body {
 .review-content .stars img {
   height: 250px;
   width: 250px;
+  margin-bottom: 20px;
 }
 
 .reviews {
@@ -396,16 +397,27 @@ body {
 }
 
 .review-content .paragraph p {
-  margin: 10px 15px 40px 15px
+  margin: 0px 15px 40px 15px
+}
+
+.review-content .reviews .paragraph .avatar {
+  display: flex;
+  align-self: start;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
 
 .review-content .reviews .paragraph img {
   height: 50px;
   width: 50px;
-  margin-left: 30px;
   border-radius: 50%;
-  align-self: start;
   margin-bottom: 5px;
+}
+
+.review-content .reviews .paragraph h4 {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .review-content .reviews {
