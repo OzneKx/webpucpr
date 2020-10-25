@@ -465,7 +465,44 @@ body {
 
 
 /* === FOOTER STYLIZATION === */
+footer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+footer strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(201, 204, 207);
+}
+
+footer .top-contact h1 {
+  color: rgb(201, 204, 207);
+}
+
+footer strong i {
+  margin-right: 8px;
+}
+
+.top-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top-contact img {
+  height: 350px;
+  width: 350px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
 
 
 
@@ -544,6 +581,36 @@ body {
 
   .review-content .reviews .paragraph strong {
     font-size: 14px;
+  }
+
+  footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-contact {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .top-contact h1 {
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+
+  .contact-info {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info strong {
+    margin-top: 8px;
+    margin: 0 auto;
   }
 }
 
