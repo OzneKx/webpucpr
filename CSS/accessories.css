@@ -106,17 +106,12 @@ body {
 .mid-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   color: rgb(201, 204, 207);
 }
 
-.mid-content {
-  width: 50%;
-}
-
 .mid-content img {
-  width: 50%;
   height: 550px;
 }
 
