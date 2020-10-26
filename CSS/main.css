@@ -348,11 +348,7 @@ body {
 
 .review-content .review-title p {
   font-size: 24px;
-}
-
-.review-content .review-title img {
-  height: 250px;
-  width: 250px;
+  margin-bottom: 25px;
 }
 
 .review-content .stars {
@@ -361,14 +357,15 @@ body {
   justify-content: center;
 }
 
-.review-content .stars img {
-  height: 160px;
-  width: 160px;
+.review-content .stars i {
+  color: #ffef00;
+  margin: 25px 2.5px;
+  font-size: 26px
 }
 
 .review-content .duvidas {
   width: 100%;
-  max-width: 1000px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -376,7 +373,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin: 30px 0 40px 0;
   font-size: 24px;
 }
 
@@ -394,9 +391,11 @@ body {
   height: 170px;
   padding: 16px;
 
+  background: rgb(213, 218, 223);
+
   margin-top: 8px;
   resize: none;
-  border: none;
+  border: 2px solid rgb(128, 28, 28);
   border-radius: 8px;
   outline: none;
   font-size: 20px;
@@ -421,7 +420,6 @@ body {
 }
 
 .reviews {
-  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +442,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 15px;
+  margin-top: 40px;
 }
 
 .review-content .paragraph p {
