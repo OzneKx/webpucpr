@@ -541,6 +541,7 @@ footer .top-contact i {
   color: rgb(201, 204, 207);
   font-size: 40px;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 footer .contact-info strong i {
@@ -713,7 +714,7 @@ footer .contact-info strong i {
     margin: 4px 0;
   }
 
-  .rights strong {
+  .rights {
     display: flex;
     align-items: center;
     justify-content: center;

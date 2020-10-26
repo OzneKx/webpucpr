@@ -219,6 +219,53 @@ body {
 
 
 
+/* === FOOTER STYLIZATION === */
+footer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+footer strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(201, 204, 207);
+}
+
+footer .top-contact h1 {
+  color: rgb(201, 204, 207);
+}
+
+footer .top-contact i {
+  color: rgb(201, 204, 207);
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer .contact-info strong i {
+  margin-right: 8px;
+}
+
+.top-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+
+
+
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
 @media(max-width: 1000px) {
@@ -275,7 +322,7 @@ body {
 
   .mid-content img {
     height: 500px;
-    width: 450px;
+    width: 550px;
   }
 
 
@@ -295,6 +342,63 @@ body {
   .bottom-content .product1 button {
     font-size: 18px;
   }
+
+
+
+  /* === FOOTER STYLIZATION === */
+  footer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-contact {
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+
+    margin-bottom: 18px;
+  }
+
+  .top-contact h1 {
+    padding-top: 50px;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .top-contact i {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .contact-info {
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info strong {
+    margin: 4px 0;
+  }
+
+  .rights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+  }
 }
 
 
@@ -302,6 +406,6 @@ body {
 @media(max-width: 680px) {
   .mid-content .image img {
     height: 300px;
-    width: 250px;
+    width: 320px;
   }
 }
