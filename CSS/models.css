@@ -136,3 +136,154 @@ body {
 
 
 
+
+/* === MODELS EXHIBITION === */
+.bottom-content {
+  width: 100%;
+  margin-top: 35px;
+  color: rgb(201, 204, 207);
+}
+
+.bottom-content .bottom-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-content .bottom-title p {
+  font-size: 24px;
+}
+
+.bottom-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+}
+
+.bottom-content .bottom-products .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 25px 0px;
+  width: 100%;
+}
+
+.bottom-content .product1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 15px;
+}
+
+.bottom-content .product1 p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.bottom-content .product1 img {
+  height: 250px;
+  width: 250px;
+}
+
+.bottom-content .product1 button {
+  margin-top: 25px;
+  width: 70%;
+  background-color: rgba(85, 20, 20, 0.747);
+  border: none;
+  color: rgb(201, 204, 207);
+  font-size: 18px;
+  height: 4vh;
+}
+
+.bottom-content .bottom-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bottom-content .bottom-products .product1 {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* === RESPONSIVE SIZE LIMITATIONS === */
+@media(max-width: 1000px) {
+  .slogan {
+    font-size: 12px;
+    width: 100vw;
+  }
+
+  .slogan .guitart h1, h3{
+    font-size: 16px;
+  }
+
+  .top-content {
+    width: 100vw;
+    height: 4vh;
+  }
+
+  .top-content .logo {
+    background-image: none;
+    display: none;
+  }
+
+  .mid-content .text {
+    width: 40%;
+    margin-bottom: 8px;
+  }
+
+  .mid-content img {
+    width: 250px;
+  }
+
+  .mid-content .text p {
+    font-size: 12px;
+    margin: 0 auto;
+  }
+
+  .mid-content .text .wrap-button a {
+    font-size: 16px;
+  }
+
+  .wrap-button {
+    height: 28px;
+  }
+
+  .bottom-content .bottom-products .content {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .bottom-products .product1 p {
+    font-size: 16px;
+  }
+
+  .bottom-content .product1 button {
+    font-size: 18px;
+  }
+}
+
+
+@media(max-width: 500px) {
+  .slogan {
+    font-size: 12px;
+    width: 100vw;
+  }
+
+  .slogan .slogan-guitart {
+    font-size: 12px;
+  }
+
+  .slogan .guitart h1, h3, a, i {
+    font-size: 13px;
+  }
+}
