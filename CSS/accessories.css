@@ -57,7 +57,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 25px;
 }
 
 .slogan i {
@@ -66,7 +65,13 @@ body {
 }
 
 .slogan .guitart {
-  margin: 10px 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan .guitart div {
+  margin: 8px 0;
 }
 
 .slogan .guitart h1 {
@@ -75,9 +80,9 @@ body {
   justify-content: center;
 }
 
-.slogan .slogan-guitart {
-  margin-bottom: 8px;
-}
+
+
+
 
 
 
@@ -223,9 +228,25 @@ body {
 @media(max-width: 1000px) {
   /* === HEADER STYLIZATION === */
   .slogan {
-    font-size: 12px;
     width: 100vw;
   }
+
+  .slogan i {
+    font-size: 17px;
+  }
+
+  .slogan a {
+    font-size: 16px;
+  }
+
+  .slogan .guitart h1 {
+    font-size: 22px;
+  }
+
+  .slogan .guitart h3 {
+    display: none;
+  }
+
 
 
 
@@ -253,7 +274,8 @@ body {
   }
 
   .mid-content img {
-    width: 400px;
+    height: 500px;
+    width: 450px;
   }
 
 
@@ -277,7 +299,7 @@ body {
 
 
 
-@media(max-width: 500px) {
+@media(max-width: 680px) {
   .mid-content .image img {
     height: 300px;
     width: 250px;
