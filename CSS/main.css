@@ -393,9 +393,8 @@ body {
 
   background: rgb(213, 218, 223);
 
-  margin-top: 8px;
   resize: none;
-  border: 2px solid rgb(128, 28, 28);
+  border: 3px solid rgb(128, 28, 28);
   border-radius: 8px;
   outline: none;
   font-size: 20px;
@@ -442,7 +441,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 15px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .review-content .paragraph p {
@@ -524,6 +523,7 @@ footer {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 footer strong {
@@ -537,7 +537,13 @@ footer .top-contact h1 {
   color: rgb(201, 204, 207);
 }
 
-footer strong i {
+footer .top-contact i {
+  color: rgb(201, 204, 207);
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+footer .contact-info strong i {
   margin-right: 8px;
 }
 
@@ -547,16 +553,12 @@ footer strong i {
   justify-content: space-around;
 }
 
-.top-contact img {
-  height: 350px;
-  width: 350px;
-}
-
 .contact-info {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding-bottom: 50px;
+  margin-top: 50px;
 }
 
 
@@ -649,6 +651,10 @@ footer strong i {
   }
 
   footer {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
     display: grid;
     align-items: center;
     justify-content: center;
@@ -658,23 +664,39 @@ footer strong i {
     margin: 0 auto;
 
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr;
+
+    margin-bottom: 18px;
   }
 
   .top-contact h1 {
     padding-top: 50px;
     margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .top-contact i {
+    margin: 0 auto;
+    font-size: 12px;
   }
 
   .contact-info {
     margin: 0 auto;
 
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr;
   }
 
-  .contact-info strong {
-    margin-top: 8px;
+  .rights strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     margin: 0 auto;
   }
 }
