@@ -216,6 +216,7 @@ body {
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
 @media(max-width: 1000px) {
+  /* === HEADER STYLIZATION === */
   .slogan {
     font-size: 12px;
     width: 100vw;
@@ -225,6 +226,9 @@ body {
     font-size: 16px;
   }
 
+
+
+  /* === TOP MENU STYLIZATION === */
   .top-content {
     width: 100vw;
     height: 4vh;
@@ -235,6 +239,9 @@ body {
     display: none;
   }
 
+
+
+  /* === MID MENU STYLIZATION === */
   .mid-content .text {
     width: 40%;
     margin-bottom: 8px;
@@ -253,10 +260,16 @@ body {
     font-size: 16px;
   }
 
+
+
+  /* === BUTTON === */
   .wrap-button {
     height: 28px;
   }
 
+
+
+  /* === PRODUCTS EXHIBITION === */
   .bottom-content .bottom-products .content {
     display: grid;
     align-items: center;
@@ -275,6 +288,7 @@ body {
 
 
 @media(max-width: 500px) {
+  /* === HEADER STYLIZATION === */
   .slogan {
     font-size: 12px;
     width: 100vw;
