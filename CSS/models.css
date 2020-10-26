@@ -57,7 +57,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 25px;
 }
 
 .slogan i {
@@ -127,7 +126,12 @@ body {
   justify-content: space-around;
   background-color: rgb(0, 0, 0);
 
+  margin-bottom: 60px;
   color: rgb(201, 204, 207);
+}
+
+.mid-content .text {
+  margin-left: 32px;
 }
 
 .mid-content img {
@@ -138,7 +142,7 @@ body {
 
 
 
-/* === MODELS EXHIBITION === */
+/* === ACCESSORIES EXHIBITION === */
 .bottom-content {
   width: 100%;
   margin-top: 35px;
@@ -218,12 +222,24 @@ body {
 @media(max-width: 1000px) {
   /* === HEADER STYLIZATION === */
   .slogan {
-    font-size: 12px;
     width: 100vw;
   }
 
-  .slogan .guitart h1, h3{
+  .slogan i {
     font-size: 16px;
+  }
+
+  .slogan a {
+    font-size: 13px;
+  }
+
+  .slogan .guitart h1 {
+    font-size: 16px;
+  }
+
+  .slogan .guitart h3 {
+    margin-top: 2px;
+    font-size: 12px;
   }
 
 
@@ -243,33 +259,21 @@ body {
 
   /* === MID MENU STYLIZATION === */
   .mid-content .text {
-    width: 40%;
-    margin-bottom: 8px;
+    width: 100%;
+    margin-left: 16px;
   }
 
-  .mid-content img {
-    width: 250px;
-  }
-
-  .mid-content .text p {
-    font-size: 12px;
-    margin: 0 auto;
-  }
-
-  .mid-content .text .wrap-button a {
+  .mid-content .text h1,  h3 {
     font-size: 16px;
   }
 
-
-
-  /* === BUTTON === */
-  .wrap-button {
-    height: 28px;
+  .mid-content img {
+    width: 400px;
   }
 
 
 
-  /* === PRODUCTS EXHIBITION === */
+  /* === ACCESSORIES STYLIZATION === */
   .bottom-content .bottom-products .content {
     display: grid;
     align-items: center;
@@ -287,18 +291,10 @@ body {
 }
 
 
+
 @media(max-width: 500px) {
-  /* === HEADER STYLIZATION === */
-  .slogan {
-    font-size: 12px;
-    width: 100vw;
-  }
-
-  .slogan .slogan-guitart {
-    font-size: 12px;
-  }
-
-  .slogan .guitart h1, h3, a, i {
-    font-size: 13px;
+  .mid-content .image img {
+    height: 300px;
+    width: 250px;
   }
 }
