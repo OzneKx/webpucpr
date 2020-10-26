@@ -709,6 +709,10 @@ footer .contact-info strong i {
     grid-template-columns: 1fr;
   }
 
+  .contact-info strong {
+    margin: 4px 0;
+  }
+
   .rights strong {
     display: flex;
     align-items: center;
