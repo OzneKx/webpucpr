@@ -43,6 +43,7 @@ body {
 
 
 
+
 /* === HEADER STYLIZATION === */
 .slogan {
   color: rgb(201, 204, 207);
@@ -77,7 +78,6 @@ body {
 .slogan .slogan-guitart {
   margin-bottom: 8px;
 }
-
 
 
 
@@ -123,57 +123,16 @@ body {
 /* === MID MENU STYLIZATION === */
 .mid-content {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-
-  color: rgb(201, 204, 207);
-}
-
-.mid-content .background {
-  width: 100%;
-}
-
-.mid-content .background img {
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-
-.mid-content .text {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-  margin-bottom: 22px;
-}
-
-.mid-content .text p {
-  font-size: 18px;
-}
-
-.mid-content .wrap-button {
-  width: 100%;
-}
-
-
-
-
-
-/* === MID MENU STYLIZATION === */
-.mid-content {
-  display: flex;
   align-items: center;
   justify-content: space-around;
 
   color: rgb(201, 204, 207);
 }
 
-.mid-content {
-  width: 100%;
-  max-width: 100px;
+.mid-content img {
+  height: 550px;
 }
 
-.mid-content img {
-  width: 1px;
-  height: 1px;
-}
+
+
+
