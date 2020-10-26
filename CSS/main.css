@@ -566,11 +566,17 @@ footer .contact-info strong i {
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
 @media(max-width: 1000px) {
+  /* === HEADER STYLIZATION === */
   .slogan {
     font-size: 12px;
     width: 100vw;
   }
 
+
+
+
+
+  /* === TOP MENU STYLIZATION === */
   .top-content {
     width: 100vw;
     height: 4vh;
@@ -581,6 +587,11 @@ footer .contact-info strong i {
     display: none;
   }
 
+
+
+
+
+  /* === MID MENU STYLIZATION === */
   .mid-content .text {
     width: 40%;
   }
@@ -594,14 +605,20 @@ footer .contact-info strong i {
     margin: 0 auto;
   }
 
+  .mid-content .text .wrap-button {
+    height: 42px;
+    margin-bottom: 3px;
+  }
+
   .mid-content .text .wrap-button a {
     font-size: 16px;
   }
 
-  .wrap-button {
-    height: 28px;
-  }
 
+
+
+
+  /* === PRODUCTS EXHIBITION === */
   .bottom-content .bottom-products .content {
     display: grid;
     align-items: center;
@@ -617,6 +634,11 @@ footer .contact-info strong i {
     font-size: 18px;
   }
 
+
+
+
+
+  /* == REVIEW CONTENT STYLIZATION == */
   .review-content .stars img {
     height: 80px;
     width: 80px;
@@ -650,6 +672,11 @@ footer .contact-info strong i {
     margin: 0 auto;
   }
 
+
+
+
+
+  /* === FOOTER STYLIZATION === */
   footer {
     max-width: 500px;
     width: 100%;
@@ -706,8 +733,22 @@ footer .contact-info strong i {
 
 
 @media(max-width: 580px) {
+  /* === TOP MENU STYLIZATION === */
   .top-content .logo a {
     font-size: 8px;
+  }
+
+
+
+
+
+  /* === MID MENU STYLIZATION === */
+  .mid-content .text .wrap-button {
+    height: 28px;
+  }
+
+  .mid-content .text .wrap-button a {
+    font-size: 14px;
   }
 
   .wrap-button a {
