@@ -43,7 +43,6 @@ body {
 
 
 
-
 /* === HEADER STYLIZATION === */
 .slogan {
   color: rgb(201, 204, 207);
@@ -79,10 +78,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-
-
-
 
 
 
@@ -215,6 +210,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 
 
 

@@ -47,18 +47,36 @@ body {
   color: rgb(201, 204, 207);
 
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+}
+
+.slogan a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan i {
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .slogan .guitart {
-  margin: 10px 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slogan .slogan-guitart {
-  margin-bottom: 8px;
+.slogan .guitart div {
+  margin: 8px 0;
 }
 
+.slogan .guitart h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
