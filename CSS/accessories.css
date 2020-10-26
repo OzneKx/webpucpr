@@ -125,13 +125,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: rgb(0, 0, 0);
 
+  margin-bottom: 60px;
   color: rgb(201, 204, 207);
 }
 
 .mid-content img {
   height: 550px;
 }
+
 
 
 
