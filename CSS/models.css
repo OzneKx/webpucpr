@@ -231,6 +231,10 @@ body {
   height: 4vh;
 }
 
+.bottom-content .product1 button:hover {
+  background-color: ;
+}
+
 .bottom-content .bottom-products {
   display: flex;
   align-items: center;
