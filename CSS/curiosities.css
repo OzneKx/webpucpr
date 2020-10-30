@@ -300,7 +300,6 @@ footer .contact-info strong i {
 
   .mid-content1 img {
     width: 450px;
-    object-fit: cover;
   }
 
 
@@ -362,27 +361,59 @@ footer .contact-info strong i {
 
 
 @media(max-width: 830px) {
+  /* === MID-CONTENT STYLIZATION === */
+  .mid-content {
+    height: 350px;
+  }
+
+  .mid-content .text {
+    width: 50vw;
+    margin-right: 16px;
+  }
+
+  .mid-content .text h1, h3 {
+    margin-left: 16px;
+  }
+
+  .mid-content .image {
+    width: 50vw;
+  }
+
   .mid-content .image img {
-    height: 500px;
-    width: 350px;
+    width: 100%;
+  }
+
+
+
+  /* === MID-CONTENT1 STYLIZATION === */
+  .mid-content1 {
+    height: 350px;
+  }
+
+  .mid-content1 .text {
+    width: 50vw;
+  }
+
+  .mid-content1 .text h1, h3 {
+    margin-left: 16px;
+  }
+
+  .mid-content1 .image {
+    width: 50vw;
   }
 
   .mid-content1 .image img {
-    height: 500px;
-    width: 350px;
+    width: 100%;
   }
 }
 
 
-
 @media(max-width: 680px) {
-  .mid-content .image img {
-    height: 400px;
-    width: 250px;
+  .mid-content {
+    height: 350px;
   }
 
-  .mid-content1 .image img {
-    height: 400px;
-    width: 250px;
+  .mid-content1 {
+    height: 350px;
   }
 }
