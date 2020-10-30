@@ -144,6 +144,18 @@ body {
 
 
 
+/* === SECTION STYLIZATION === */
+.exhibition {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
 /* === MID 1 MENU STYLIZATION === */
 .mid-content1 {
   display: flex;
@@ -161,10 +173,13 @@ body {
 
 .mid-content1 .image {
   height: 100%;
+  width: 400px;
+  max-width: 400px;
 }
 
 .mid-content1 .image img {
   height: 100%;
+  width: 100%;
 }
 
 
@@ -175,19 +190,25 @@ body {
 .mid-content2 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: rgb(0, 0, 0);
+  justify-content: space-between;
 
   height: 550px;
   max-height: 550px;
 }
 
+.mid-content2 .text {
+  margin: 0 auto;
+}
+
 .mid-content2 .image {
   height: 100%;
+  width: 400px;
+  max-width: 400px;
 }
 
 .mid-content2 .image img {
   height: 100%;
+  width: 100%;
 }
 
 
@@ -243,6 +264,35 @@ footer .contact-info strong i {
 
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
+@media(max-width: 1650px) {
+  /* === SECTION STYLIZATION === */
+  .exhibition {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mid-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+
+    height: 550px;
+    max-height: 550px;
+  }
+
+  .mid-content2 .image {
+    height: 100%;
+  }
+
+  .mid-content2 .image img {
+    height: 100%;
+  }
+}
+
+
 @media(max-width: 1000px) {
   /* === HEADER STYLIZATION === */
   .slogan {
