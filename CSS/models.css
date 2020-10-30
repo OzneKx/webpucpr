@@ -232,7 +232,8 @@ body {
 }
 
 .bottom-content .product1 button:hover {
-  background-color: ;
+  background-color: rgba(126, 10, 10, 0.534);
+  border: none;
 }
 
 .bottom-content .bottom-products {
