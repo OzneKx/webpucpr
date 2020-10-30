@@ -130,6 +130,19 @@ body {
   max-height: 550px;
 }
 
+.banner .text h1, h3 {
+  margin-left: 16px;
+}
+
+.banner .text h1 {
+  margin-top: 22px;
+  border-bottom: 1px solid red;
+}
+
+.banner .text h3 {
+  margin-top: 8px;
+}
+
 .banner .image {
   height: 100%;
 }
@@ -166,13 +179,6 @@ body {
 
 .exhibition .image img {
   border-radius: 12px;
-}
-
-
-.exhibition .text h1{
-  width: 150px;
-  margin-top: 22px;
-  border-bottom: 1px solid red;
 }
 
 .exhibition .text h3 {
@@ -346,7 +352,6 @@ footer .contact-info strong i {
 
   .banner img {
     height: 500px;
-    width: 450px;
   }
 
 
@@ -372,6 +377,12 @@ footer .contact-info strong i {
     border-radius: 22px;
   }
 
+  .exhibition .text h1 {
+    width: 160px;
+    margin-top: 22px;
+    border-bottom: 1px solid red;
+  }
+
   .exhibition .text h3 {
     font-size: 16px;
   }
@@ -380,6 +391,7 @@ footer .contact-info strong i {
     order: -1;
     height: 80%;
   }
+
 
 
   /* === FOOTER STYLIZATION === */
@@ -423,5 +435,44 @@ footer .contact-info strong i {
 
   .contact-info strong {
     margin: 5px 0;
+  }
+}
+
+
+@media(max-width: 960px) {
+  /* === MID-CONTENT STYLIZATION === */
+  .banner {
+    height: 450px;
+  }
+
+  .banner .text {
+    width: 30vw;
+    margin-right: 16px;
+  }
+
+  .banner .image {
+    width: 80vw;
+  }
+
+  .banner .image img {
+    width: 100%;
+  }
+}
+
+@media(max-width: 860px) {
+  .banner {
+    height: 425px;
+  }
+}
+
+@media(max-width: 680px) {
+  .banner {
+    height: 375px;
+  }
+}
+
+@media(max-width: 500px) {
+  .banner {
+    height: 350px;
   }
 }
