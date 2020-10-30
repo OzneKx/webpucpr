@@ -90,7 +90,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 4%;
 }
 
 .top-content a {
@@ -103,8 +102,7 @@ body {
   justify-content: center;
   width: 48px;
   height: 48px;
-  margin-bottom: 2px;
-  margin-left: 12px;
+  margin: 0 0 2px 12px;
 }
 
 .top-content .right-icons {
@@ -170,12 +168,15 @@ body {
   border-radius: 12px;
 }
 
+
 .exhibition .text h1{
+  width: 150px;
   margin-top: 22px;
+  border-bottom: 1px solid red;
 }
 
 .exhibition .text h3 {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 
@@ -269,7 +270,7 @@ footer .contact-info strong i {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   margin-top: 50px;
 }
 
@@ -366,7 +367,7 @@ footer .contact-info strong i {
     align-items: center;
     justify-content: center;
 
-    padding: 12px 8px;
+    margin: 12px 8px;
 
     border-radius: 22px;
   }
@@ -385,7 +386,6 @@ footer .contact-info strong i {
   footer {
     max-width: 500px;
     width: 100%;
-    margin: 0 auto;
 
     display: grid;
     align-items: center;
@@ -418,21 +418,10 @@ footer .contact-info strong i {
     margin: 0 auto;
 
     display: grid;
-    align-items: center;
-    justify-content: center;
     grid-template-columns: 1fr;
   }
 
   .contact-info strong {
-    margin: 4px 0;
-  }
-
-  .rights {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin: 0 auto;
+    margin: 5px 0;
   }
 }
-
