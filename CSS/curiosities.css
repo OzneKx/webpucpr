@@ -132,6 +132,10 @@ body {
   max-height: 550px;
 }
 
+.mid-content .text {
+  margin: 0 auto;
+}
+
 .mid-content .image {
   height: 100%;
 }
@@ -150,8 +154,13 @@ body {
   align-items: center;
   justify-content: space-around;
 
+  color: rgb(201, 204, 207);
   height: 550px;
   max-height: 550px;
+}
+
+.mid-content1 .text {
+  margin: 0 auto;
 }
 
 .mid-content1 .image {
