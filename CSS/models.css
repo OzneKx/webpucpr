@@ -156,7 +156,7 @@ body {
 
 
 
-/* === ACCESSORIES EXHIBITION === */
+/* === MODELS EXHIBITION === */
 .bottom-content {
   width: 100%;
   margin-top: 35px;
@@ -171,6 +171,18 @@ body {
 
 .bottom-content .bottom-title p {
   font-size: 24px;
+}
+
+.bottom-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  padding: 8px 0;
+  margin: 70px 40px 0 40px;
+  background-color: rgba(85, 20, 20, 0.747);
 }
 
 .bottom-products {
