@@ -121,8 +121,8 @@ body {
 
 
 
-/* === MID MENU STYLIZATION === */
-.mid-content {
+/* === BANNER STYLIZATION === */
+.banner {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -132,11 +132,11 @@ body {
   max-height: 550px;
 }
 
-.mid-content .image {
+.banner .image {
   height: 100%;
 }
 
-.mid-content .image img {
+.banner .image img {
   height: 100%;
 }
 
@@ -330,63 +330,54 @@ footer .contact-info strong i {
 
 
 
-  /* === MID MENU STYLIZATION === */
-  .mid-content .text {
+  /* === BANNER STYLIZATION === */
+  .banner .text {
     width: 100%;
     margin-left: 16px;
   }
 
-  .mid-content .text h1 {
+  .banner .text h1 {
     font-size: 24px;
   }
 
-  .mid-content .text h3 {
+  .banner .text h3 {
     font-size: 14px;
   }
 
-  .mid-content img {
+  .banner img {
     height: 100%;
     width: 450px;
   }
 
 
 
-  /* === MID 2 MENU STYLIZATION === */
-  .mid-content1 .text {
-    width: 100%;
-    margin-left: 16px;
+  /* === SECTION STYLIZATION === */
+  .exhibition .mid-content1 {
+    flex-direction: column;
   }
 
-  .mid-content1 .text h1 {
-    font-size: 24px;
+  .mid-content1 .image {
+    height: 70%;
+    order: -1;
   }
 
-  .mid-conten1.text h3 {
-    font-size: 14px;
+  .mid-content1 .image img {
+    height: 100%;
+    order: -1;
   }
 
-  .mid-content1 img {
-    width: 450px;
+  .exhibition .mid-content2 {
+    flex-direction: column;
   }
 
-
-
-  /* === MID 2 MENU STYLIZATION === */
-  .mid-content2 .text {
-    width: 100%;
-    margin-left: 16px;
+  .mid-content2 .image {
+    height: 70%;
+    order: -1;
   }
 
-  .mid-content2 .text h1 {
-    font-size: 24px;
-  }
-
-  .mid-conten2 .text h3 {
-    font-size: 14px;
-  }
-
-  .mid-content2 img {
-    width: 450px;
+  .mid-content2 .image img {
+    height: 100%;
+    order: -1;
   }
 
 
@@ -446,119 +437,3 @@ footer .contact-info strong i {
   }
 }
 
-
-@media(max-width: 830px) {
-  /* === MID-CONTENT STYLIZATION === */
-  .mid-content {
-    height: 400px;
-  }
-
-  .mid-content .text {
-    width: 40vw;
-    margin-right: 16px;
-  }
-
-  .mid-content .text h1, h3 {
-    margin-left: 16px;
-  }
-
-  .mid-content .image {
-    width: 50vw;
-  }
-
-  .mid-content .image img {
-    width: 100%;
-  }
-
-
-
-  /* === MID-CONTENT1 STYLIZATION === */
-  .mid-content1 {
-    height: 400px;
-  }
-
-  .mid-content1 .text {
-    width: 50vw;
-  }
-
-  .mid-content1 .text h1, h3 {
-    margin-left: 16px;
-  }
-
-  .mid-content1 .image {
-    width: 70vw;
-  }
-
-  .mid-content1 .image img {
-    width: 100%;
-  }
-
-
-
-  /* === MID-CONTENT2 STYLIZATION === */
-  .mid-content2 {
-    height: 400px;
-  }
-
-  .mid-content2 .text {
-    width: 50vw;
-  }
-
-  .mid-content2 .text h1, h3 {
-    margin-left: 16px;
-  }
-
-  .mid-content2 .image {
-    width: 70vw;
-  }
-
-  .mid-content2 .image img {
-    width: 100%;
-  }
-}
-
-
-@media(max-width: 680px) {
-  .mid-content {
-    height: 350px;
-  }
-
-  .mid-content .text {
-    width: 50vw;
-  }
-
-  .mid-content .text h1, h3 {
-    margin-left: 16px;
-  }
-
-  .mid-content .image {
-    width: 50vw;
-  }
-
-  .mid-content .image img {
-    width: 100%;
-  }
-
-
-
-  /* === MID-CONTENT1 STYLIZATION === */
-  .mid-content1 {
-    height: 350px;
-  }
-
-  .mid-content1 .text {
-    width: 50vw;
-  }
-
-  .mid-content1 .text h1, h3 {
-    margin-left: 16px;
-  }
-
-  .mid-content1 .image {
-    width: 70vw;
-  }
-
-  .mid-content1 .image img {
-    width: 100%;
-  }
-}
