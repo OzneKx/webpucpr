@@ -46,8 +46,6 @@ body {
 
 /* === HEADER STYLIZATION === */
 .slogan {
-  color: rgb(201, 204, 207);
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -219,7 +217,6 @@ body {
   border-radius: 12px;
   background-color: rgba(85, 20, 20, 0.747);
   border: none;
-  color: rgb(201, 204, 207);
   font-size: 18px;
   height: 4vh;
 }
@@ -357,20 +354,6 @@ body {
 
 .review-content .paragraph p {
   margin: 0px 15px 40px 15px
-}
-
-.bottom-content h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 5px;
-
-  width: 400px;
-
-  padding: 10px 0;
-  margin: 80px 40px 0 45px;
-  background-color: rgba(85, 20, 20, 0.747);
 }
 
 .review-content .reviews .paragraph .avatar {
@@ -538,39 +521,39 @@ footer .contact-info strong i {
   }
 
 
-    /* == REVIEW CONTENT STYLIZATION == */
-    .review-content .stars img {
-      height: 80px;
-      width: 80px;
-    }
+  /* == REVIEW CONTENT STYLIZATION == */
+  .review-content .stars img {
+    height: 80px;
+    width: 80px;
+  }
 
-   .review-content .duvidas {
-      font-size: 16px;
-   }
+  .review-content .duvidas {
+    font-size: 16px;
+  }
 
-    .review-content .reviews .review-info {
-      display: grid;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-    }
+  .review-content .reviews .review-info {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
-    .review-content .reviews .paragraph img {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      margin-bottom: 5px;
-    }
+  .review-content .reviews .paragraph img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
 
-    .review-content .reviews .paragraph strong {
-      font-size: 14px;
-    }
+  .review-content .reviews .paragraph strong {
+    font-size: 14px;
+  }
 
-    .review-content .duvidas {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-    }
+  .review-content .duvidas {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 
 
 

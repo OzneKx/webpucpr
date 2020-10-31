@@ -45,8 +45,6 @@ body {
 
 /* === HEADER STYLIZATION === */
 .slogan {
-  color: rgb(201, 204, 207);
-
   display: flex;
   align-items: center;
   justify-content: space-around;
