@@ -213,10 +213,6 @@ body {
   margin-right: 35px;
 }
 
-.cart .product-name .quantidade i {
-  background-color: #000;
-}
-
 .cart .product-name .quantidade input {
   width: 16px;
   height: 16px;
@@ -329,13 +325,13 @@ footer .contact-info strong i {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     margin-top: 25px;
   }
 
   .cart .product-name {
     display: grid;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 35px;
   }
 
@@ -343,6 +339,37 @@ footer .contact-info strong i {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 0 auto;
+
+    width: 70%;
+    height: 30vh;
+  }
+
+  .cart .product-name p b {
+    margin: 0 auto;
+  }
+
+  .cart .quantidade {
+    margin: 0 auto;
+  }
+
+  .cart .quantidade .numbers {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart .description {
+    margin: 0 16px;
+  }
+
+  .cart .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 35px;
   }
 
 
