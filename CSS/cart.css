@@ -149,8 +149,137 @@ body {
 
 
 
+/* === TITLE STYLIZATION === */
+.bottom-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 0 26px 0;
+}
+
+.bottom-title p {
+  font-size: 24px;
+  margin: 20px 0 35px 0;
+}
+
+
+
+
+
+/* === CART STYLIZATION === */
+.content {
+  display: grid;
+  grid-template: 1fr;
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 100vw;
+  max-width: 1000px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+
+  margin: 0 auto;
+  margin-top: 16px;
+
+  padding: 26px 32px;
+
+  background-color: #000;
+  border-radius: 26px;
+}
+
+.cart .product-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart .product-name img {
+  width: 150px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+.cart .product-name p {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+}
+
+.cart .product-name .quantidade i {
+  background-color: #000;
+}
+
+.cart .product-name .quantidade input {
+  width: 16px;
+  height: 16px;
+}
+
+.cart .price p {
+  margin-left: 25px;
+}
+
+
+
+
+
+/* === FOOTER STYLIZATION === */
+footer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+footer strong {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(201, 204, 207);
+}
+
+footer .top-contact h1 {
+  color: rgb(201, 204, 207);
+}
+
+footer .top-contact i {
+  color: rgb(201, 204, 207);
+  font-size: 40px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer .contact-info strong i {
+  margin-right: 8px;
+}
+
+.top-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+
+
+
 /* === RESPONSIVE SIZE LIMITATIONS === */
-@media(max-width: 1000px) {
+@media(max-width: 1220px) {
   /* === HEADER STYLIZATION === */
   .slogan {
     width: 100vw;
@@ -184,5 +313,98 @@ body {
   .top-content .logo {
     background-image: none;
     display: none;
+  }
+
+
+
+  /* === CONTENT STYLIZATION === */
+  .content {
+    max-width: 800px;
+  }
+
+  .cart {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .cart .product-name {
+    display: grid;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .cart .product-name img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  /* === FOOTER STYLIZATION === */
+  footer {
+    max-width: 500px;
+    width: 100%;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .top-contact {
+    margin: 0 auto;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+
+    margin-bottom: 18px;
+  }
+
+  .top-contact h1 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .top-contact i {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .contact-info {
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info strong {
+    margin: 5px 0;
+  }
+}
+
+@media(max-width: 893px) {
+  .content {
+    max-width: 700px;
+  }
+}
+
+@media(max-width: 770px) {
+  .content {
+    max-width: 500px;
+  }
+}
+
+@media(max-width: 680px) {
+  .content {
+    max-width: 400px;
   }
 }
