@@ -137,12 +137,8 @@ body {
 }
 
 .mid-content .text h1 {
-  margin-top: 22px;
   border-bottom: 1px solid red;
-}
-
-.mid-content .text h3 {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .mid-content .image {
@@ -151,6 +147,7 @@ body {
 
 .mid-content .image img {
   height: 100%;
+  max-width: 550px;
 }
 
 
@@ -171,6 +168,20 @@ body {
 
 .bottom-content .bottom-title p {
   font-size: 24px;
+}
+
+.bottom-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  width: 400px;
+
+  padding: 10px 0;
+  margin: 120px 40px 0 45px;
+  background-color: rgba(85, 20, 20, 0.747);
 }
 
 .bottom-products {
@@ -208,11 +219,11 @@ body {
 
 .bottom-content .product1 button {
   margin-top: 25px;
-  width: 70%;
+  width: 300px;
+  border-radius: 12px;
   background-color: rgba(85, 20, 20, 0.747);
   border: none;
   color: rgb(201, 204, 207);
-  border-radius: 10px;
   font-size: 18px;
   height: 4vh;
 }
