@@ -271,6 +271,14 @@ body {
   border: none;
 }
 
+.bottom-content .product1 button i {
+  margin-left: 2px;
+}
+
+.bottom-content .product1 button:hover {
+  transform: translateX(7px);
+}
+
 .bottom-content .bottom-products {
   display: flex;
   align-items: center;
