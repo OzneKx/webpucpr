@@ -113,7 +113,7 @@ body {
   color: rgb(201, 204, 207);
 }
 
-.top-content a:hover {
+.top-content a, p:hover {
   transition: .2s;
   color: #fff;
 }
