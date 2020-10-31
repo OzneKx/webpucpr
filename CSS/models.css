@@ -540,6 +540,43 @@ footer .contact-info strong i {
 
 
 
+  /* == REVIEW CONTENT STYLIZATION == */
+  .review-content .stars img {
+    height: 80px;
+    width: 80px;
+  }
+
+ .review-content .duvidas {
+    font-size: 16px;
+ }
+
+  .review-content .reviews .review-info {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .review-content .reviews .paragraph img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+
+  .review-content .reviews .paragraph strong {
+    font-size: 14px;
+  }
+
+  .review-content .duvidas {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+
+
+
   /* === FOOTER STYLIZATION === */
   footer {
     max-width: 500px;
