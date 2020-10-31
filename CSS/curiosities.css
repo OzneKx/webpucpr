@@ -90,10 +90,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.top-content a {
-  color: rgb(201, 204, 207);
+  height: 4%;
 }
 
 .top-content .logo img {

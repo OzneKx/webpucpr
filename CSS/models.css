@@ -92,10 +92,6 @@ body {
   height: 4%;
 }
 
-.top-content a {
-  color: rgb(201, 204, 207);
-}
-
 .top-content .logo img {
   display: flex;
   align-items: center;
