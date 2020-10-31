@@ -84,6 +84,7 @@ body {
 .slogan .slogan-guitart a, i {
   color: rgb(201, 204, 207);
   text-decoration: none;
+  margin-right: 16px;
 }
 
 .slogan .slogan-guitart a, i:hover {
