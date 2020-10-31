@@ -353,6 +353,20 @@ body {
   margin: 0px 15px 40px 15px
 }
 
+.bottom-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  width: 400px;
+
+  padding: 10px 0;
+  margin: 80px 40px 0 45px;
+  background-color: rgba(85, 20, 20, 0.747);
+}
+
 .review-content .reviews .paragraph .avatar {
   display: flex;
   align-self: start;
