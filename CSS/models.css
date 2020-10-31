@@ -624,6 +624,10 @@ footer .contact-info strong i {
     margin-right: 16px;
   }
 
+  .mid-content .text h1, h3 {
+    margin-left: 16px;
+  }
+
   .mid-content .image {
     width: 70vw;
   }

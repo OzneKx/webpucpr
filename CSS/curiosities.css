@@ -361,6 +361,7 @@ footer .contact-info strong i {
   }
 
   .banner img {
+    width: 450px;
     height: 500px;
   }
 
@@ -449,19 +450,23 @@ footer .contact-info strong i {
 }
 
 
-@media(max-width: 960px) {
+@media(max-width: 830px) {
   /* === MID-CONTENT STYLIZATION === */
   .banner {
-    height: 450px;
+    height: 350px;
   }
 
   .banner .text {
     width: 30vw;
-    margin-right: 20px;
+    margin-right: 16px;
+  }
+
+  .banner .text h1, h3 {
+    margin-left: 16px;
   }
 
   .banner .image {
-    width: 80vw;
+    width: 70vw;
   }
 
   .banner .image img {
@@ -469,11 +474,6 @@ footer .contact-info strong i {
   }
 }
 
-@media(max-width: 860px) {
-  .banner {
-    height: 425px;
-  }
-}
 
 @media(max-width: 680px) {
   .banner {
