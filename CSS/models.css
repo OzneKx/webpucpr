@@ -151,7 +151,6 @@ body {
 .bottom-content {
   width: 100%;
   margin-top: 35px;
-  color: rgb(201, 204, 207);
 }
 
 .bottom-content .bottom-title {
@@ -169,13 +168,13 @@ body {
   align-items: center;
   justify-content: center;
 
-  border-radius: 5px;
+  border-radius: 25%;
 
-  width: 400px;
+  padding: 12px;
+  width: 200px;
+  margin: 140px auto 0 auto;
 
-  padding: 10px 0;
-  margin: 120px 40px 0 45px;
-  background-color: rgba(85, 20, 20, 0.747);
+  border:  2px solid rgba(85, 20, 20, 0.747);
 }
 
 .bottom-products {
