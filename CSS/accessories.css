@@ -404,9 +404,6 @@ footer strong {
   justify-content: center;
 }
 
-footer .top-contact h1 {
-}
-
 footer .top-contact i {
   font-size: 40px;
   margin: 0 5px;
@@ -605,7 +602,6 @@ footer .contact-info strong i {
   }
 }
 
-
 @media(max-width: 830px) {
   /* === MID-CONTENT STYLIZATION === */
   .mid-content {
@@ -629,7 +625,6 @@ footer .contact-info strong i {
     width: 100%;
   }
 }
-
 
 @media(max-width: 680px) {
   .mid-content {

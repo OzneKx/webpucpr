@@ -147,6 +147,23 @@ body {
 
 
 
+/* === TITLE STYLIZATION === */
+.bottom-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 0 26px 0;
+}
+
+.bottom-title p {
+  font-size: 24px;
+}
+
+
+
+
+
 /* === SECTION STYLIZATION === */
 .exhibition {
   display: grid;
@@ -157,16 +174,6 @@ body {
   margin-top: 20px;
 }
 
-.exhibition .bottom-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 22px 0 26px 0;
-}
-
-.exhibition .bottom-title p {
-  font-size: 24px;
-}
 
 .exhibition .mid-content1, .mid-content2 {
   padding: 16px 32px;
