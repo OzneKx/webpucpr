@@ -217,7 +217,6 @@ body {
   border-radius: 12px;
   background-color: rgba(85, 20, 20, 0.747);
   border: none;
-  color: rgb(201, 204, 207);
   font-size: 18px;
   height: 4vh;
 }
@@ -234,11 +233,6 @@ body {
   width: 100%;
 }
 
-.bottom-content .bottom-products .product1 {
-  display: flex;
-  align-items: center;
-}
-
 
 
 
@@ -247,7 +241,6 @@ body {
 .review-content {
   width: 100vw;
   margin-top: 55px;
-  color: rgb(201, 204, 207);
 }
 
 .review-content .review-title {
@@ -318,7 +311,6 @@ body {
   bottom: 0px;
   right: 0px;
 
-  color: rgb(201, 204, 207);
   background-color:	rgb(128, 28, 28);
 
   transition: all 0.4s;
@@ -410,15 +402,12 @@ footer strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(201, 204, 207);
 }
 
 footer .top-contact h1 {
-  color: rgb(201, 204, 207);
 }
 
 footer .top-contact i {
-  color: rgb(201, 204, 207);
   font-size: 40px;
   margin: 0 5px;
   cursor: pointer;
