@@ -7,23 +7,14 @@
 
 /* === HTML TAGS STYLIZATION === */
 * {
+  font-size: 62.5%;
   margin: 0;
   box-sizing: border-box;
   font-family: 'New Rocker', cursive;
   -webkit-font-smoothin: antialised;
   text-rendering: optimizeLegibility;
-}
-
-h1, h3, h4, a, p, button, strong, span {
   color: rgb(201, 204, 207);
-}
-
-a {
   text-decoration: none;
-}
-
-p {
-  font-size: 16px;
 }
 
 button {
@@ -51,14 +42,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   margin: 0 auto;
 
   width: 100%;
-  max-width: 1700px;
-}
-
-header i {
-  font-size: 18px;
+  max-width: 170rem;
 }
 
 header .guitart {
@@ -68,12 +56,22 @@ header .guitart {
 header h1, h3 {
   display: flex;
   justify-content: center;
+
   margin: 8px 0;
 }
 
-header div a, i {
-  text-decoration: none;
+header h1 {
+  font-size: 1.8rem;
 }
+
+header h3 {
+  font-size: 1.6rem;
+}
+
+header div a, i {
+  font-size: 1.8rem;
+}
+
 
 header div a, i:hover {
   transition: .2s;
@@ -89,7 +87,7 @@ header div a, i:hover {
   display: flex;
   align-items: center;
 
-  height: 36px;
+  height: 3.6rem;
   width: 100vw;
 
   background-color: rgba(85, 20, 20, 0.747);
@@ -112,17 +110,19 @@ header div a, i:hover {
 }
 
 .menu .left-menu img {
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   margin: 0 0 0 16px;
 }
 
 .menu-content nav {
   margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu-content nav a {
-  justify-content: space-between;
+  font-size: 1.6rem;
 }
 
 .menu-content .right-menu a {
@@ -621,11 +621,9 @@ footer .contact-info strong i {
 /* === RESPONSIVE SIZE LIMITATIONS === */
 @media(max-width: 1000px) {
   /* === HEADER STYLIZATION === */
-  .slogan {
-    font-size: 12px;
-    width: 100vw;
-  }
-
+   * {
+     font-size: 55%;
+   }
 
 
   /* === TOP MENU STYLIZATION === */
@@ -782,8 +780,13 @@ footer .contact-info strong i {
 
 @media(max-width: 720px) {
   /* === TOP MENU STYLIZATION === */
-  .top-content nav {
+  .menu .menu-content nav {
     display: none;
+  }
+
+  .menu .menu-content .hidden-menu a {
+    font-size: 20px;
+    color: rgb(201, 204, 207);
   }
 }
 

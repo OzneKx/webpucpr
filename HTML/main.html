@@ -35,6 +35,10 @@
           </a>
         </div>
 
+        <a href="#" class="hidden-menu">
+          <i class="far fa-bars"></i>
+        </a>
+
         <nav>
           <a href="../HTML/models.html">
             MODELOS
@@ -46,18 +50,18 @@
             CURIOSIDADES
           </a>
         </nav>
+          <div class="right-menu">
+            <a href="../HTML/cart.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="../HTML/login.html">
+              <i class="far fa-user"></i>
+            </a>
+            <a href="">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
 
-        <div class="right-menu">
-          <a href="../HTML/cart.html">
-            <i class="fas fa-shopping-cart"></i>
-          </a>
-          <a href="../HTML/login.html">
-            <i class="far fa-user"></i>
-          </a>
-          <a href="">
-            <i class="fas fa-search"></i>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -270,5 +274,13 @@
         >
       </div>
     </footer>
+
+    <script>
+      const hiddenMenu = document.querySelector('.hidden-menu');
+      hiddenMenu.addEventListener('click', function() {
+        this.classList.toggle('open');
+      });
+
+    </script>
   </body>
 </html>
