@@ -13,7 +13,7 @@
   text-rendering: optimizeLegibility;
 }
 
-h1, h3, a {
+h1, h3, h4, a, p, button, strong, span {
   color: rgb(201, 204, 207);
 }
 
@@ -63,6 +63,11 @@ body {
 .slogan i {
   font-size: 24px;
   margin-right: 8px;
+}
+
+.slogan .voltar:hover {
+  transition: .2s;
+  color: #fff;
 }
 
 .slogan .guitart {
