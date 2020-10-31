@@ -131,8 +131,8 @@ body {
   max-height: 550px;
 }
 
-.mid-content .text h1, h3 {
-  margin-left: 16px;
+.mid-content .text {
+  margin-left: 22px;
 }
 
 .mid-content .text h1 {
