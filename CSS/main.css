@@ -13,6 +13,10 @@
   text-rendering: optimizeLegibility;
 }
 
+h1, h3, a {
+  color: rgb(201, 204, 207);
+}
+
 a {
   text-decoration: none;
 }
@@ -44,8 +48,6 @@ body {
 
 /* === HEADER STYLIZATION === */
 .slogan {
-  color: rgb(201, 204, 207);
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -83,6 +85,11 @@ body {
   text-decoration: none;
 }
 
+.slogan .slogan-guitart a, i:hover {
+  transition: .2s;
+  color: #fff;
+}
+
 
 
 
@@ -98,6 +105,11 @@ body {
 
 .top-content a {
   color: rgb(201, 204, 207);
+}
+
+.top-content a:hover {
+  transition: .2s;
+  color: #fff;
 }
 
 .top-content .logo img {
@@ -119,6 +131,11 @@ body {
 
 .top-content .right-icons a {
   margin-right: 12px;
+}
+
+.top-content .right-icons i:hover {
+  transition: .2s;
+  color: #fff;
 }
 
 

@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
   text-rendering: optimizeLegibility;
+}
+
+h1, h3, a {
   color: rgb(201, 204, 207);
 }
 
@@ -78,6 +81,16 @@ body {
   justify-content: center;
 }
 
+.slogan .slogan-guitart a, i {
+  color: rgb(201, 204, 207);
+  text-decoration: none;
+}
+
+.slogan .slogan-guitart a, i:hover {
+  transition: .2s;
+  color: #fff;
+}
+
 
 
 
@@ -91,25 +104,40 @@ body {
   height: 4%;
 }
 
+.top-content a {
+  color: rgb(201, 204, 207);
+}
+
+.top-content a:hover {
+  transition: .2s;
+  color: #fff;
+}
+
 .top-content .logo img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  margin: 0 0 2px 12px;
+  margin-bottom: 2px;
+  margin-left: 12px;
 }
 
 .top-content .right-icons {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .top-content .right-icons a {
   margin-right: 12px;
 }
 
+.top-content .right-icons i:hover {
+  transition: .2s;
+  color: #fff;
+}
 
 
 
