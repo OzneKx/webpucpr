@@ -8,7 +8,8 @@
 /* === HTML TAGS STYLIZATION === */
 * {
   margin: 0;
-  font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
+  font-family: 'New Rocker', cursive;
+  -webkit-font-smoothin: antialised;
   text-rendering: optimizeLegibility;
   color: rgb(201, 204, 207);
   box-sizing: border-box;

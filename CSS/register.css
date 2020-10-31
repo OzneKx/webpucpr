@@ -6,7 +6,8 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'New Rocker', cursive;  -webkit-font-smoothin: antialised;
+  font-family: 'New Rocker', cursive;
+  -webkit-font-smoothin: antialised;
   text-rendering: optimizeLegibility;
   color: rgb(201, 204, 207);
 }
