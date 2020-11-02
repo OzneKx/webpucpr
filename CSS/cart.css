@@ -160,9 +160,9 @@ body {
 
 .bottom-title p {
   font-size: 24px;
-  margin: 20px 0 35px 0;
+  margin: 25px 0;
+  border-bottom: 2px solid red;
 }
-
 
 
 
@@ -234,6 +234,32 @@ body {
   margin-left: 25px;
 }
 
+
+
+
+
+/* === TOTAL STYLIZATION === */
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(85, 20, 20, 0.747);
+
+  border-radius: 0 22px;
+  padding: 28px;
+
+  margin: 0 auto;
+
+  margin-top: 35px;
+
+  width: 100vw;
+  max-width: 500px;
+}
+
+.total p {
+  margin: 0 32px;
+}
 
 
 
@@ -382,6 +408,17 @@ footer .contact-info strong i {
     justify-content: center;
 
     margin-top: 35px;
+  }
+
+  .total {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .total p {
+    margin: 0 auto;
+
+    font-size: 16px;
   }
 
 
