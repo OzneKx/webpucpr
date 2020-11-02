@@ -91,11 +91,15 @@ body {
 
 .wrapper .div-register .input input {
   padding: 15px 16px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 8px;
   outline: none;
   margin-bottom: 25px;
   background-color: rgba(0, 0, 0, 0.226);
+}
+
+.wrapper .div-register .input input:hover {
+  border: solid 2px rgba(85, 20, 20, 0.747);
 }
 
 .input input::placeholder {
