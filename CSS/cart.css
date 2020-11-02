@@ -323,7 +323,6 @@ footer .contact-info strong i {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    justify-content: center;
     margin-top: 25px;
   }
 
@@ -345,15 +344,14 @@ footer .contact-info strong i {
     height: 30vh;
   }
 
-  .cart .product-name p b {
+  .cart .product-name p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
   }
 
-  .cart .quantidade {
-    margin: 0 auto;
-  }
-
-  .cart .quantidade .numbers {
+  .cart .product-name .quantidade .numbers {
     margin: 0 auto;
     align-items: center;
     justify-content: center;
