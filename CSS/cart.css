@@ -217,7 +217,15 @@ body {
   margin-right: 25px;
 }
 
+.cart .product-name .quantidade .cart-items {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cart .product-name .quantidade input {
+  margin: 0 5px;
   width: 16px;
   height: 16px;
 }
@@ -344,7 +352,7 @@ footer .contact-info strong i {
 
     margin: 0 auto;
 
-    width: 70%;
+    width: 40%;
     height: 30vh;
   }
 
@@ -365,7 +373,7 @@ footer .contact-info strong i {
   }
 
   .cart .description {
-    margin: 0 16px;
+    margin: 0 32px;
   }
 
   .cart .price {
@@ -426,16 +434,32 @@ footer .contact-info strong i {
   .content {
     max-width: 700px;
   }
+
+  .cart .description {
+    margin: 0 28px;
+  }
 }
 
 @media(max-width: 770px) {
   .content {
     max-width: 500px;
   }
+
+  .cart .description {
+    margin: 0 22px;
+  }
 }
 
 @media(max-width: 680px) {
   .content {
     max-width: 400px;
+  }
+
+  .cart .product-name img {
+    width: 70%;
+  }
+
+  .cart .description {
+    margin: 0 16px;
   }
 }
