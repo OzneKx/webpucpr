@@ -213,6 +213,10 @@ body {
   margin-right: 35px;
 }
 
+.cart .product-name .quantidade {
+  margin-right: 25px;
+}
+
 .cart .product-name .quantidade input {
   width: 16px;
   height: 16px;
@@ -327,9 +331,9 @@ footer .contact-info strong i {
   }
 
   .cart .product-name {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 auto;
     margin-bottom: 35px;
   }
 
@@ -351,10 +355,13 @@ footer .contact-info strong i {
     margin: 0 auto;
   }
 
-  .cart .product-name .quantidade .numbers {
+  .cart .product-name .quantidade {
     margin: 0 auto;
+    margin: 5px 0;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   .cart .description {
