@@ -264,12 +264,36 @@ body {
 
 
 
+
+/* === MAP STYLIZATION === */
+.map {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.map iframe {
+  border: 8px solid rgba(85, 20, 20, 0.747);
+  border-radius: 16px;
+}
+
+.map iframe:hover {
+  border: 8px solid rgba(85, 20, 20, 0.747);
+  border-radius: 16px;
+}
+
+
+
+
+
 /* === FOOTER STYLIZATION === */
 footer {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 55px;
 }
 
 footer strong {

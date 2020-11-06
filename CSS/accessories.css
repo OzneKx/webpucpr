@@ -428,6 +428,29 @@ body {
 
 
 
+
+/* === MAP STYLIZATION === */
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.map iframe {
+  border: 8px solid rgba(85, 20, 20, 0.747);
+  border-radius: 16px;
+}
+
+.map iframe:hover {
+  border: 8px solid rgba(85, 20, 20, 0.747);
+  border-radius: 16px;
+}
+
+
+
+
+
 /* === FOOTER STYLIZATION === */
 footer {
   max-width: 1000px;
@@ -492,7 +515,6 @@ footer .contact-info strong i {
   .slogan .guitart h3 {
     display: none;
   }
-
 
 
 
@@ -580,7 +602,6 @@ footer .contact-info strong i {
     max-width: 400px;
     margin: 0 auto;
   }
-
 
 
 
