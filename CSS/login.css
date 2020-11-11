@@ -122,8 +122,6 @@ body {
 
 /* === LOGIN BUTTON === */
 .wrap-button {
-  background-color: rgba(85, 20, 20, 0.747);
-  border-radius: 10px;
   height: 48px;
   margin-bottom: 20px;
   width: 100%;
@@ -144,8 +142,18 @@ body {
 }
 
 .wrap-button a:hover {
-  background-color: rgba(65, 14, 14, 0.534);
+  background-color: rgba(81, 11, 11, 0.534);
   border: none;
+  border-radius: 10px;
+}
+
+.wrap-button a button {
+  background-color: rgba(81, 11, 11, 0.534);
+  border: none;
+  height: 48px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 

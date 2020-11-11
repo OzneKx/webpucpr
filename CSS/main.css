@@ -189,6 +189,7 @@ body {
   border-radius: 8px;
   width: 19%;
   height: 50px;
+  border-radius: 10px;
   border: 2px solid transparent;
   transition: .2s;
   margin-top: 5px;
@@ -209,8 +210,9 @@ body {
 }
 
 .wrap-button a:hover {
-  background-color: rgba(126, 10, 10, 0.534);
+  background-color: rgba(81, 11, 11, 0.534);
   border: none;
+  border-radius: 10px;
 }
 
 .wrapper .div-login .form .wrap-button:hover {

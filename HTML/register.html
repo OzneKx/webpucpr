@@ -9,6 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="../assets/images/logo.jpg" type = "image/x-icon">
+    <script src="../JavaScript/registerValidation.js"></script>
     <title>Cadastro</title>
   </head>
   <body>
@@ -17,6 +18,7 @@
         <div class="title">
           <h3>Cadastro</h3>
         </div>
+
         <div class="input">
           <p>
             <i class="far fa-user"></i>
@@ -38,6 +40,7 @@
           </p>
           <input type="password" placeholder="Senha..." />
         </div>
+
         <div class="input">
           <p>
             <i class="fas fa-lock"></i>
@@ -45,14 +48,20 @@
           </p>
           <input type="password" placeholder="Confirmar Senha..." />
         </div>
+
         <div class="wrap-button">
-          <a href="../HTML/login.html"> Cadastrar </a>
+          <a href="../HTML/login.html">
+            <button type="submit" onclick="loginValidation()">Cadastrar</button>
+            </a
+          >
         </div>
+
         <footer class="footer-content">
           <img src="../assets/images/logo.jpg" alt="Logo">
           <h3>GuitART</h3>
         </footer>
       </div>
+
       <div class="image">
         <img src="../assets/images/RegistrationPete.jpeg" alt="Guitarra" />
       </div>
