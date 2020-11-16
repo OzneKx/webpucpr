@@ -7,28 +7,30 @@ $(document).ready(function () {
 });
 
 function clickEvent() {
-  $('#enter').click(function () {
-    var email = $('#email').val();
-    var password = $('#password').val();
+  $("#enter").click(function () {
+    var email = $("#email").val();
+    var password = $("#password").val();
 
     var aux = [];
 
-    if (globalFieldStatusValidation == true) {
+    if (email == "" || password == "") {
+      alert("Dados Inválidos! Tente novamente!");
+      cleanInputFields();
+    } else {
       aux.push(email);
       aux.push(password);
 
       data.push(aux);
 
-      storage.setItem('user', JSON.stringify(data));
+      console.log(data);
 
-      storage.href = '../HTML/main.html';
-    } else {
-      alert("Dados Inválidos! Tente novamente!");
-      cleanInputFields();
+      storage.setItem("user", JSON.stringify(data));
+
+      window.location.href = "../HTML/main.html";
     }
   });
 }
 
-function cleanPasswordFields() {
+function cleanInputFields() {
   $("input").val("");
 }

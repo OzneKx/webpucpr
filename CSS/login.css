@@ -141,13 +141,13 @@ body {
   transition: .2s;
 }
 
-.wrap-button a:hover {
+.wrap-button button:hover {
   background-color: rgba(81, 11, 11, 0.534);
   border: none;
   border-radius: 10px;
 }
 
-.wrap-button a button {
+.wrap-button button {
   background-color: rgba(81, 11, 11, 0.534);
   border: none;
   height: 48px;
