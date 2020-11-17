@@ -3,10 +3,4 @@ var data;
 
 $(document).ready(function() {
   data = JSON.parse(storage.getItem("user"));
-
-  showUserData();
 });
-
-function showUserData() {
-  $()
-}
