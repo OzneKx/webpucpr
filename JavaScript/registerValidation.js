@@ -2,6 +2,7 @@ var data = [];
 var storage = window.localStorage;
 var globalStatusValidation = false;
 
+
 $(document).ready(function () {
   clickEvents();
 });
@@ -24,7 +25,7 @@ function clickEvent() {
 
       data.push(aux);
       storage.setItem("user", JSON.stringify(data));
-    
+
       window.localStorage.href = "../HTML/login.html";
     } else {
       alert("Dados inválidos! Tente novamente!");
