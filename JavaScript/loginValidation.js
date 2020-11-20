@@ -5,24 +5,25 @@ $(document).ready(function () {
   clickEvent();
 });
 
+
 function clickEvent() {
-  $("#enter").click(function () {
-    var email = $("#email").val();
-    var password = $("#password").val();
+  var email = $("#email").val();
+  var password = $("#password").val();
 
-    if (email == "" || password == "") {
-      alert("Preencha os campos obigatórios! Tente novamente!");
-      cleanInputFields();
-    } else {
-      aux.push(email);
-      aux.push(password);
-
-      data.push(aux);
-
-      sdata = JSON.parse(storage.getItem("user"));
-
-      window.location.href = "../HTML/main.html";
+  $("#register").click(function() {
+    for (var c = 0; c < localStorage.length; c++) {
+      data = JSON.parse(localStorage.getItem(c + 1));
+      if (data[2] == email && data[3] == password) {
+        storage.href = "../HTML/main.html";
+      } else {
+        alert("Preencha os campos necessários! Tente novamente!");
+        cleanInputFields();
+      }
     }
   });
 }
 
+
+function cleanInputFields() {
+  $("input").val("");
+}

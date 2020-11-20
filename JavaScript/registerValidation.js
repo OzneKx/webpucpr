@@ -8,24 +8,36 @@ $(document).ready(function () {
 
 
 function clickEvent() {
-  var email = $("#email").val();
-  var password = $("#password").val();
-
   $("#register").click(function() {
-    for (var c = 0; c < localStorage.length; c++) {
-      data = JSON.parse(localStorage.getItem(c + 1));
-      if (data[2] == email && data[3] == password) {
-        storage.href = "../HTML/main.html";
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+    var confirm = $("#confirm").val();
+
+    if (name == "" || email == "" || password == "" || confirm == "") {
+      alert("Preencha os campos obigatórios! Tente novamente!");
+    } else {
+      var aux = []
+
+      aux.push(name);
+      aux.push(email);
+
+      if (password == confirm) {
+        aux.push(password);
+        aux.push(confirm);
+
+        data.push(aux);
+
+        storage.setItem("data", JSON.stringify(data));
+
+        $("input").val("");
+        window.location.href = "../HTML/login.html";
       } else {
-        alert("Preencha os campos necessários! Tente novamente!");
-        cleanInputFields();
+        alert("Preencha os campos obigatórios! Tente novamente!");
+        $("#password").val("");
+        $("#confirm").val("");
       }
     }
   });
-}
-
-
-function cleanInputFields() {
-  $("input").val("");
 }
 
