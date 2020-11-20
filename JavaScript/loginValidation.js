@@ -10,8 +10,6 @@ function clickEvent() {
     var email = $("#email").val();
     var password = $("#password").val();
 
-    var aux = [];
-
     if (email == "" || password == "") {
       alert("Preencha os campos obigatórios! Tente novamente!");
       cleanInputFields();
@@ -21,13 +19,10 @@ function clickEvent() {
 
       data.push(aux);
 
-      storage.getItem("user", JSON.stringify(data));
+      sdata = JSON.parse(storage.getItem("user"));
 
       window.location.href = "../HTML/main.html";
     }
   });
 }
 
-function cleanInputFields() {
-  $("input").val("");
-}
