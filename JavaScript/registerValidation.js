@@ -8,34 +8,17 @@ $(document).ready(function () {
 
 
 function clickEvent() {
+  var email = $("#email").val();
+  var password = $("#password").val();
+
   $("#register").click(function() {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var password = $("#password").val();
-    var confirm = $("#confirm").val();
-
-    if (name == "" || email == "" || password == "" || confirm == "") {
-      alert("Preencha os campos obigatórios! Tente novamente!");
-    } else {
-      var aux = []
-
-      aux.push(name);
-      aux.push(email);
-
-      if (password == confirm) {
-        aux.push(password);
-        aux.push(confirm);
-
-        data.push(aux);
-
-        storage.setItem("data", JSON.stringify(data));
-
-        window.location.href = "../HTML/login.html";
-        cleanInputFields();
+    for (var c = 0; c < localStorage.length; c++) {
+      data = JSON.parse(localStorage.getItem(c + 1));
+      if (data[2] == email && data[3] == password) {
+        storage.href = "../HTML/main.html";
       } else {
-        alert("As senhas devem coincidir!");
-        $("#password").val("");
-        $("#confirm").val("");
+        alert("Preencha os campos necessários! Tente novamente!");
+        cleanInputFields();
       }
     }
   });
