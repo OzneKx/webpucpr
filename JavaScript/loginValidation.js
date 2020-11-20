@@ -7,17 +7,20 @@ $(document).ready(function () {
 
 
 function clickEvent() {
-  var email = $("#email").val();
-  var password = $("#password").val();
+  $("#enter").click(function() {
+    var email = $("#email").val();
+    var password = $("#password").val();
 
-  $("#register").click(function() {
-    for (var c = 0; c < localStorage.length; c++) {
-      data = JSON.parse(localStorage.getItem(c + 1));
-      if (data[2] == email && data[3] == password) {
-        storage.href = "../HTML/main.html";
-      } else {
-        alert("Preencha os campos necessários! Tente novamente!");
-        cleanInputFields();
+    user = JSON.parse(localStorage.getItem('data'));
+
+    if (email == "" || password == "") {
+      alert("Preencha os campos obigatórios! Tente novamente!");
+    } else {
+      for (var c = 0; c < user.length; c++) {
+        if (user[c][1] == email && user[c][2] == password) {
+          cleanInputFields();
+          window.location.href = "../HTML/main.html";
+        }
       }
     }
   });
@@ -27,3 +30,4 @@ function clickEvent() {
 function cleanInputFields() {
   $("input").val("");
 }
+
