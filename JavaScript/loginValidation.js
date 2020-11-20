@@ -1,6 +1,5 @@
 var data = [];
 var storage = window.localStorage;
-var globalFieldStatusValidation = false;
 
 $(document).ready(function () {
   clickEvent();
@@ -14,7 +13,7 @@ function clickEvent() {
     var aux = [];
 
     if (email == "" || password == "") {
-      alert("Dados Inválidos! Tente novamente!");
+      alert("Preencha os campos obigatórios! Tente novamente!");
       cleanInputFields();
     } else {
       aux.push(email);
@@ -22,9 +21,7 @@ function clickEvent() {
 
       data.push(aux);
 
-      console.log(data);
-
-      storage.setItem("user", JSON.stringify(data));
+      storage.getItem("user", JSON.stringify(data));
 
       window.location.href = "../HTML/main.html";
     }

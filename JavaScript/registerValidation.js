@@ -1,6 +1,5 @@
 var data = [];
 var storage = window.localStorage;
-var globalStatusValidation = false;
 
 
 $(document).ready(function () {
@@ -15,22 +14,30 @@ function clickEvent() {
     var password = individualValidation("#password");
     var confirm = individualValidation("#confirm");
 
-    if (globalStatusValidation) {
+    if (name == "" || email == "" || password == "" || confirm == "") {
+      alert("Preencha os campos obrigatórios! Tente novamente!");
+      cleanInputFields();
+    } else {
       var aux = []
 
       aux.push(name);
       aux.push(email);
-      aux.push(password);
-      aux.push(confirm);
+
+      if (password == confirm) {
+        aux.push(password);
+        aux.push(confirm);
+      } else {
+        alert("As senhas devem coincidir!");
+        cleanInputFields();
+      }
 
       data.push(aux);
+
       storage.setItem("user", JSON.stringify(data));
 
-      window.localStorage.href = "../HTML/login.html";
-    } else {
-      alert("Dados inválidos! Tente novamente!");
+      window.location.href = "../HTML/login.html";
     }
-  })
+  });
 }
 
 
@@ -42,3 +49,8 @@ function individualValidation(idField) {
     alert("Preencher todos os campos obrigatórios!");
   }
 }
+
+function cleanInputFields() {
+  $("input").val("");
+}
+
