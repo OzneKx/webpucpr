@@ -30,8 +30,7 @@ function clickEvent() {
         if (data != null || data.length == 0) {
           storage.setItem("data", JSON.stringify(data));
         } else {
-          for (c = 1; c <= data.length; c++) {
-            data.push(data[c]);
+          for (c = 0; c < data.length; c++) {
             storage.setItem("data", JSON.stringify(data));
           }
         }
