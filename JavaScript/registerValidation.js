@@ -17,27 +17,32 @@ function clickEvent() {
     if (name == "" || email == "" || password == "" || confirm == "") {
       alert("Preencha os campos obigatórios! Tente novamente!");
     } else {
-      var aux = []
-
-      aux.push(name);
-      aux.push(email);
-
       if (password == confirm) {
+        var aux = []
+
+        aux.push(name);
+        aux.push(email);
         aux.push(password);
         aux.push(confirm);
 
         data.push(aux);
 
-        storage.setItem("data", JSON.stringify(data));
-
-        $("input").val("");
-        window.location.href = "../HTML/login.html";
+        if (data != null || data.length == 0) {
+          storage.setItem("data", JSON.stringify(data));
+        } else {
+          for (c = 1; c <= data.length; c++) {
+            data.push(data[c]);
+            storage.setItem("data", JSON.stringify(data));
+          }
+        }
       } else {
-        alert("Preencha os campos obigatórios! Tente novamente!");
+        alert("Senhas devem coincidir! Tente novamente!");
         $("#password").val("");
         $("#confirm").val("");
       }
+
+      $("input").val("");
+      window.location.href = "../HTML/login.html";
     }
   });
 }
-

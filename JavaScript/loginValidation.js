@@ -20,6 +20,8 @@ function clickEvent() {
         if (user[c][1] == email && user[c][2] == password) {
           cleanInputFields();
           window.location.href = "../HTML/main.html";
+        } else {
+          alert("Usuário não encontrado! Cadastre-se.");
         }
       }
     }
