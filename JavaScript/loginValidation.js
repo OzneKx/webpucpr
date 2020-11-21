@@ -1,5 +1,6 @@
 var data = [];
 var storage = window.localStorage;
+var globalUserStatus = false;
 
 
 $(document).ready(function () {
@@ -19,12 +20,18 @@ function clickEvent() {
     } else {
       for (c = 0; c < user.length; c++) {
         if (user[c][1] == email && user[c][2] == password) {
+          console.log(globalUserStatus)
           cleanInputFields();
-          window.localStorage.href = "../HTML/main.html";
+          window.location.href = "../HTML/main.html";
         } else {
-          alert("Usuário não encontrado! Cadastre-se.");
+          globalUserStatus = true;
+          console.log(globalUserStatus)
         }
       }
+    }
+
+    if (globalUserStatus == true) {
+      alert("Usuário não encontrado! Cadastre-se! ");
     }
   });
 }
