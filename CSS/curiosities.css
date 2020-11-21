@@ -234,21 +234,23 @@ body {
 
 
 /* === MID 1 MENU STYLIZATION === */
-.map-wrap {
+.mid-content1 {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+
+  color: rgb(201, 204, 207);
+  height: 550px;
+  max-height: 550px;
 }
 
-#map {
-  width: 100%;
-  max-width: 1000px;
-  height: 400px;
+.mid-content1 .text {
   margin: 0 auto;
+}
 
-  margin: 80px 0;
-  border: 8px solid rgba(85, 20, 20, 0.747);
-  border-radius: 16px;
+.mid-content1 .image img {
+  height: 100%;
+  width: 100%;
 }
 
 
