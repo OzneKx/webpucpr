@@ -1,18 +1,9 @@
-var mapa;
-var data;
 var storage = window.localStorage;
 
 
 $(document).ready(function() {
-  data = JSON.parse(storage.getItem('user'));
+  var data = JSON.parse(storage.getItem('user'));
 });
-
-
-function clickEvent() {
-  $("#addCart").click(function() {
-
-  });
-}
 
 
 function initMap() {
@@ -21,11 +12,21 @@ function initMap() {
     zoom: 12
   }
 
-  mapa = new google.maps.Map(document.getElementById('map'), configuracoes);
+  var mapa = new google.maps.Map(document.getElementById('map'), configuracoes);
 
   var marcador = new google.maps.Marker({
     position: {lat: 11.551536855884436, lng: 92.24415040434234},
     title: "Ilha Sentilena do Norte",
     map: mapa
   });
+
+  
+function clickEvent() {
+  $("#addCart").click(function() {
+
+  });
 }
+
+
+}
+
