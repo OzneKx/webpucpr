@@ -1,6 +1,7 @@
 var data = [];
 var storage = window.localStorage;
 
+
 $(document).ready(function () {
   clickEvent();
 });

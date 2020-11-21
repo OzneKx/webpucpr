@@ -1,6 +1,6 @@
 var data = [];
 var storage = window.localStorage;
-
+const user = JSON.parse(localStorage.getItem('data'));
 
 $(document).ready(function () {
   clickEvent();
@@ -13,6 +13,7 @@ function clickEvent() {
     var email = $("#email").val();
     var password = $("#password").val();
     var confirm = $("#confirm").val();
+
 
     if (name == "" || email == "" || password == "" || confirm == "") {
       alert("Preencha os campos obigatórios! Tente novamente!");
@@ -27,21 +28,22 @@ function clickEvent() {
 
         data.push(aux);
 
-        if (data != null || data.length == 0) {
-          storage.setItem("data", JSON.stringify(data));
+        if (user == null || user.length == 0) {
+          storage.setItem("user", JSON.stringify(data));
         } else {
-          for (c = 0; c < data.length; c++) {
-            storage.setItem("data", JSON.stringify(data));
+          for (c = 0; c < user.length + 1; c++) {
+            data.push(user[c]);
+            storage.setItem("user", JSON.stringify(data));
           }
         }
+
+        $("input").val("");
+        window.location.href = "../HTML/login.html";
       } else {
         alert("Senhas devem coincidir! Tente novamente!");
         $("#password").val("");
         $("#confirm").val("");
       }
-
-      $("input").val("");
-      window.location.href = "../HTML/login.html";
     }
   });
 }
