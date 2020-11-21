@@ -215,19 +215,31 @@ body {
 
 .cart .product-name .quantidade {
   margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart .product-name .quantidade .cart-items {
-  margin: 5px;
+  margin: 5px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cart .product-name .quantidade input {
+.cart .product-name .quantidade .cart-items button {
+  background-color: #000;
+  border: none;
+}
+
+.cart .product-name .quantidade .cart-items input {
   margin: 0 5px;
+  margin-left: 10px;
   width: 16px;
   height: 16px;
+  background-color: #000;
+  border: none;
 }
 
 .cart .price p {

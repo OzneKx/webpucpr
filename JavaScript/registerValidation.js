@@ -31,7 +31,6 @@ function clickEvent() {
         if (user == null || user.length == 0) {
           storage.setItem('user', JSON.stringify(data));
         } else {
-          console.log('gay');
           for (c = 0; c < user.length; c++) {
             data.push(user[c]);
             storage.setItem('user', JSON.stringify(data));

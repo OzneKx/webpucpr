@@ -20,12 +20,10 @@ function clickEvent() {
     } else {
       for (c = 0; c < user.length; c++) {
         if (user[c][1] == email && user[c][2] == password) {
-          console.log(globalUserStatus)
           cleanInputFields();
           window.location.href = "../HTML/main.html";
         } else {
           globalUserStatus = true;
-          console.log(globalUserStatus)
         }
       }
     }
