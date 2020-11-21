@@ -246,8 +246,20 @@ body {
   margin-bottom: 15px;
 }
 
+.bottom-content .product1 .avaliation {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.bottom-content .product1 .avaliation strong, i {
+  font-size: 20px;
+}
+
 .bottom-content .product1 button {
-  margin-top: 25px;
+  margin-top: 15px;
   width: 300px;
   border-radius: 12px;
   background-color: rgba(85, 20, 20, 0.747);
@@ -558,7 +570,11 @@ footer .contact-info strong i {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 67%;
+  }
+
+  .bottom-content .bottom-products .content .product1 {
+    margin: 22px;
   }
 
   .bottom-products .product1 p {
@@ -568,6 +584,7 @@ footer .contact-info strong i {
   .bottom-content .product1 button {
     font-size: 18px;
   }
+
 
 
   /* == REVIEW CONTENT STYLIZATION == */
