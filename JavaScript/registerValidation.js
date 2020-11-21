@@ -2,9 +2,11 @@ var data = [];
 var storage = window.localStorage;
 const user = JSON.parse(storage.getItem('user'));
 
+
 $(document).ready(function () {
   clickEvent();
 });
+
 
 function clickEvent() {
   $('#register').click(function () {
