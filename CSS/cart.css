@@ -353,10 +353,6 @@ footer .contact-info strong i {
     font-size: 22px;
   }
 
-  .slogan .guitart h3 {
-    display: none;
-  }
-
 
 
   /* === TOP MENU STYLIZATION === */
@@ -488,6 +484,14 @@ footer .contact-info strong i {
     margin: 5px 0;
   }
 }
+
+
+@media(max-width: 1000px) {
+  .slogan .guitart h3 {
+    display: none;
+  }
+}
+
 
 @media(max-width: 893px) {
   .content {

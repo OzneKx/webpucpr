@@ -513,6 +513,10 @@ footer .contact-info strong i {
   .banner {
     height: 375px;
   }
+
+  .mid-content1, .mid-content2 {
+    max-width: 400px;
+  }
 }
 
 @media(max-width: 500px) {
