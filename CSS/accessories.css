@@ -707,4 +707,8 @@ footer .contact-info strong i {
   .mid-content {
     height: 350px;
   }
+
+  .map-wrap #map {
+    max-width: 400px;
+  }
 }

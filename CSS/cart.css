@@ -525,4 +525,8 @@ footer .contact-info strong i {
   .cart .description {
     margin: 0 16px;
   }
+
+  .map-wrap #map {
+    max-width: 400px;
+  }
 }

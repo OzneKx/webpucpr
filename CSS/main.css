@@ -812,6 +812,15 @@ footer .contact-info strong i {
 
 
 
+@media(max-width: 680px) {
+ .map-wrap #map {
+    max-width: 400px;
+  }
+}
+
+
+
+
 
 @media(max-width: 580px) {
   /* === TOP MENU STYLIZATION === */
