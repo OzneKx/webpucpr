@@ -568,12 +568,11 @@ footer .contact-info strong i {
     display: grid;
     align-items: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 67%;
   }
 
-  .bottom-content .bottom-products .content {
+  .bottom-content .bottom-products .content .product1 {
     margin: 25px 25px;
-
   }
 
   .bottom-products .product1 p {
@@ -581,9 +580,7 @@ footer .contact-info strong i {
   }
 
   .bottom-content .product1 button {
-    width: 200px;
-    height: 50px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
 
