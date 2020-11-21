@@ -256,7 +256,7 @@ body {
   justify-content: space-evenly;
   margin: 25px 50px;
   width: 100%;
-  max-width: 1700px;
+  max-width: 1200px;
 }
 
 .bottom-content .product1 {
@@ -265,6 +265,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0px 15px;
+  max-width: 250px;
+  width: 100%;
 }
 
 .bottom-content .product1 p {
@@ -272,14 +274,14 @@ body {
 }
 
 .bottom-content .product1 img {
+  height: 425px;
+  width: 142px;
   margin-bottom: 18px;
-  height: 250px;
-  width: 250px;
 }
 
 .bottom-content .product1 button {
   margin-top: 25px;
-  width: 70%;
+  width: 100%;
   background-color: rgba(85, 20, 20, 0.747);
   border: none;
   color: rgb(201, 204, 207);
@@ -783,21 +785,25 @@ footer .contact-info strong i {
 }
 
 
+@media(max-width: 960px) {
+  /* === PRODUCTS EXHIBITION === */
+  .bottom-content .bottom-products .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .bottom-content .bottom-products .content .product1 {
+    margin: 25px 0px;
+  }
+} 
 
 
 @media(max-width: 800px) {
   /* === PRODUCTS EXHIBITION === */
-  .bottom-content .bottom-products .content {
-    display: grid;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-
   .bottom-products {
     width: 100%;
-    max-width: 500px;
   }
 
   .bottom-products .product1 p {
