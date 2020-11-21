@@ -5,7 +5,6 @@ var storage = window.localStorage;
 
 $(document).ready(function() {
   data = JSON.parse(storage.getItem('user'));
-  initMap();
 });
 
 
