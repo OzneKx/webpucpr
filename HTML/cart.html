@@ -169,6 +169,39 @@
     <p>R$ 8.900,00</p>
   </section>
 
+  <section class="payment-methods">
+    <div>
+      <p>CARTÃO</p>
+      <div class="payment-card">
+        <input type="radio" id="male" name="gender" value="male">
+        <i class="fab fa-cc-visa"></i>
+        <label for="male">VISA</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <i class="fab fa-cc-mastercard"></i>
+        <label for="male">MASTER CARD</label><br>
+      </div>
+      <select>
+        <option value="0">Métodos de pagamento:</option>
+        <option value="1">1x R$xxxx,xx</option>
+        <option value="2">2x R$xxxx,xx</option>
+        <option value="3">4x R$xxxx,xx</option>
+        <option value="4">6x R$xxxx,xx</option>
+        <option value="5">8x R$xxxx,xx</option>
+        <option value="6">10x R$xxxx,xx</option>
+        <option value="7">12x R$xxxx,xx</option>
+      </select>
+      <br>
+      <br>
+      <p>À VISTA</p>
+      <div class="payment-cash">
+        <input type="radio" id="male" name="gender" value="male">
+        <i class="fas fa-barcode"></i>
+        <label for="male">BOLETO</label><br>
+      </div>
+    </div>
+    <button>COMPRAR</button>
+  </section>
+
   <div class="map-wrap">
     <div id="map"></div>
   </div>

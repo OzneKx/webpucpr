@@ -246,12 +246,13 @@ body {
 
   background-color: rgba(85, 20, 20, 0.747);
 
-  border-radius: 0 22px;
+  border-radius: 0 16px;
   padding: 28px;
 
   margin: 0 auto;
 
   margin-top: 55px;
+  margin-bottom: 55px;
 
   width: 100vw;
   max-width: 500px;
@@ -259,6 +260,52 @@ body {
 
 .total p {
   margin: 0 32px;
+}
+
+
+
+
+
+/* === PAYMENT STYLIZATION === */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 0 auto;
+  height: 250px;
+
+  width: 100%;
+  max-width: 250px;
+  background-color: #000;
+  border-radius: 16px;
+}
+
+.payment-methods p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.payment-methods select {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.payment-methods input, i, label {
+  margin: 0 2px;
+  color: #fff;
+}
+
+.payment-methods button {
+  margin: 8px 0;
+  background-color: rgba(85, 20, 20, 0.747);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 70%;
 }
 
 
