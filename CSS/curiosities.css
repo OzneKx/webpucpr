@@ -234,13 +234,19 @@ body {
 
 
 /* === MID 1 MENU STYLIZATION === */
-#map {
+.map-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+}
+
+#map {
+  width: 100%;
+  max-width: 1000px;
   height: 400px;
-  margin: 15px 80px;
+  margin: 0 auto;
+
+  margin: 80px 0;
   border: 8px solid rgba(85, 20, 20, 0.747);
   border-radius: 16px;
 }
