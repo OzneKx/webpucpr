@@ -34,14 +34,14 @@ function purchaseClicked() {
   while (cartItems.hasChildNodes()) {
       cartItems.removeChild(cartItems.firstChild)
   }
-  updateCartTotal()
+  updateTotal()
 }
 
 
 function removeItem(event) {
   var buttonClicked = event.target
   buttonClicked.parentElement.parentElement.remove()
-  updateCartTotal()
+  updateTotal()
 }
 
 function quantit0yChanged(event) {
@@ -49,18 +49,18 @@ function quantit0yChanged(event) {
   if (isNaN(input.value) || input.value <= 0) {
       input.value = 1
   }
-  updateCartTotal()
+  updateTotal()
 }
 
 
 function addToCartClicked(event) {
   var button = event.target
   var shopItem = button.parentElement.parentElement
-  var title = shopItem.getElementsByClassName('item-title')[0].innerText
+  var title = shopItem.getElementsByClassName('item-name')[0].innerText
   var price = shopItem.getElementsByClassName('item-price')[0].innerText
-  var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
-  addItemToCart(title, price, imageSrc)
-  updateCartTotal()
+  var image = shopItem.getElementsByClassName('item-image')[0].src
+  addItemToCart(title, price, image)
+  updateTotal()
 }
 
 
@@ -92,15 +92,15 @@ function addItemToCart(title, price, imageSrc) {
 }
 
 
-function updateCartTotal() {
-  var cartItemContainer = document.getElementsByClassName('cart-items')[0]
-  var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+function updateTotal() {
+  var cartItem = document.getElementsByClassName('cart-items')[0]
+  var cartLine = cartItem.getElementsByClassName('cart-row')
   var total = 0
-  for (var i = 0; i < cartRows.length; i++) {
-      var cartRow = cartRows[i]
+  for (var i = 0; i < cartRLinelength; i++) {
+      var cartRow = cartLine[i]
       var priceElement = cartRow.getElementsByClassName('cart-price')[0]
       var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
-      var price = parseFloat(priceElement.innerText.replace('$', ''))
+      var price = parseFloat(priceElement.innerText.replace('R$', ''))
       var quantity = quantityElement.value
       total = total + (price * quantity)
   }
