@@ -343,7 +343,7 @@ footer .contact-info strong i {
 }
 
 
-@media(max-width: 1460px) {
+@media(max-width: 1000px) {
   /* === HEADER STYLIZATION === */
   .slogan {
     width: 100vw;
