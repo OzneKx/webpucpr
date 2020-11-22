@@ -2,7 +2,8 @@ var storage = window.localStorage;
 
 
 $(document).ready(function() {
-  var data = JSON.parse(storage.getItem('user'));
+/*   var data = JSON.parse(storage.getItem('user'));
+ */  clickEvent();
 });
 
 
@@ -19,14 +20,10 @@ function initMap() {
     title: "Ilha Sentilena do Norte",
     map: mapa
   });
+}
 
-  
 function clickEvent() {
-  $("#addCart").click(function() {
-
+  $('#pay').click(function() {
+    alert("Parabéns! Seu cartão foi clonado!");
   });
 }
-
-
-}
-
