@@ -177,7 +177,7 @@ margin-bottom: 50px;
 .footer-content {
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 15vh;
 }
 
 .footer-content img {
@@ -217,7 +217,25 @@ margin-bottom: 50px;
 }
 
 
-@media(max-width: 680px) {
+@media(max-width: 480px) {
+  .div-login {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .wrap-button {
+    height: 48px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer-content img {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width: 400px) {
   .div-login {
     width: 100%;
     max-width: 325px;
