@@ -139,6 +139,10 @@ body {
   margin-right: 12px;
 }
 
+.top-content .right-icons i {
+  font-size: 16px;
+}
+
 .top-content .right-icons i:hover {
   transition: .2s;
   color: #fff;
@@ -732,5 +736,9 @@ footer .contact-info strong i {
 
   .top-content .right-icons a {
     margin-right: 8px;
+  }
+
+  .top-content .right-icons i {
+    font-size: 12px;
   }
 }
