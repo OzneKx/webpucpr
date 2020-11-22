@@ -217,7 +217,7 @@ body {
 
 .exhibition .image {
   height: 100%;
-  width: 400px;
+  width: 100%;
   max-width: 400px;
 }
 
@@ -329,7 +329,7 @@ footer .contact-info strong i {
 
 
 /* === RESPONSIVE SIZE LIMITATIONS === */
-@media(max-width: 1860px) {
+@media(max-width: 1908px) {
   /* === SECTION STYLIZATION === */
   .exhibition {
     display: grid;
@@ -343,7 +343,7 @@ footer .contact-info strong i {
 }
 
 
-@media(max-width: 1000px) {
+@media(max-width: 1460px) {
   /* === HEADER STYLIZATION === */
   .slogan {
     width: 100vw;
@@ -514,7 +514,8 @@ footer .contact-info strong i {
     height: 375px;
   }
 
-  .mid-content1, .mid-content2 {
+  .exhibition {
+    width: 100%;
     max-width: 400px;
   }
 }
