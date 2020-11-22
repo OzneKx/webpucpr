@@ -159,7 +159,7 @@ body {
 .footer-content {
   display: flex;
   flex-direction: column;
-  height: 0vh;
+  height: 10vh;
 }
 
 .footer-content img {
@@ -194,5 +194,17 @@ body {
   .wrapper .image {
     background-image: none;
     display: none;
+  }
+}
+
+
+@media(max-width: 680px) {
+  .div-register {
+    width: 100%;
+    max-width: 325px;
+  }
+
+  .wrap-button {
+    margin-bottom: 0;
   }
 }
