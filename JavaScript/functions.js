@@ -1,3 +1,5 @@
+const payment = document.getElementById('pay');
+
 let cart = document.querySelectorAll('.addCart');
 
 let products = [
@@ -302,4 +304,11 @@ function initMap() {
     map: mapa
   });
 }
+
+
+payment.addEventListener('click', () => {
+  alert('Obrigado pela compra! Volte sempre!');
+  localStorage.removeItem('productsInCart');
+  window.location.reload();
+});
 
