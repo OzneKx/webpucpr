@@ -19,6 +19,96 @@ let products = [
     price: 1680,
     quantity: 0
   },
+  {
+    name: 'GUITARRA LES PAUL - PRETA',
+    image: 'LP1.png',
+    price: 3350,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA LES PAUL - BRANCA',
+    image: 'SG2.png',
+    price: 3135,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA LES PAUL - SUNSET',
+    image: 'SG3.png',
+    price: 7000,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA FLYING V - MADEIRA',
+    image: 'FV1.png',
+    price: 2899,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA FLYING V - PRETA',
+    image: 'FV2.png',
+    price: 2700,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA FLYING V - MESCLADA',
+    image: 'FV3.png',
+    price: 2599,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA EXPLORER - MARROM',
+    image: 'EX1.png',
+    price: 3100,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA EXPLORER - PRETA',
+    image: 'EX2.png',
+    price: 3120,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA EXPLORER - VERMELHA',
+    image: 'EX3.png',
+    price: 3000,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA TELECASTER - AZUL',
+    image: 'TC1.png',
+    price: 5850,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA TELECASTER - PRETA',
+    image: 'TC2.png',
+    price: 2850,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA TELECASTER - VERMELHA',
+    image: 'TC3.png',
+    price: 2799,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA STRATOCASTER - AZUL',
+    image: 'SC1.png',
+    price: 5400,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA STRATOCASTER - ROSA',
+    image: 'SC2.png',
+    price: 1625,
+    quantity: 0
+  },
+  {
+    name: 'GUITARRA STRATOCASTER - CINZA',
+    image: 'SC3.png',
+    price: 1700,
+    quantity: 0
+  },
 ]
 
 for (let c = 0; c < cart.length; c++) {
@@ -91,20 +181,37 @@ function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
 
-  let productContainer = document.querySelector(".products-container");
+  let productContainer = document.querySelector(".products");
+  let cartCost = localStorage.getItem('totalCost');
 
-  console.log(cartItems);
   if (cartItems && productContainer) {
     productContainer.innerHTML = '';
-    Object.values(cartItems),map(item => {
+    Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
         <div class="product">
 
           <img src="../images/${item.image}.png">
-          <span>${item.name}M/span>
+          <span>${item.name}</span>
+        </div>
+        <div class="price">$${item.price},00</div>
+        <div class="quantity"><span>${item.quantity}</span></div>
+        <div class="total">
+          ${item.quantity * item.price},00
         </div>
       `
-    })
+    });
+
+    productContainer.innerHTML += `
+      <div class="basketTotalContainer">
+        <h4 class="basketTotalTitle">
+          Basket Total
+        </h4>
+        <h4 class="basketTotal">
+          $${cartCost},00
+        </h4>
+
+    `
+
   }
 }
 
