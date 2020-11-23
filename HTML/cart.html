@@ -9,8 +9,6 @@
     crossorigin="anonymous"
   ></script>
   <script src="../JavaScript/jquery-3.5.1.min.js"></script>
-  <script src="../JavaScript/functions.js" async></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
   <link rel="icon" href="../assets/images/logo.jpg" type = "image/x-icon">
   <title>Carrinho</title>
 </head>
@@ -52,8 +50,8 @@
     </a>
 
     <div class="right-icons">
-      <a href="../HTML/cart.html">
-        <i class="fas fa-shopping-cart"></i>
+      <a href="../HTML/cart.html" class="cart">
+        <i class="fas fa-shopping-cart"><span>0</span></i>
       </a>
       <a href="../HTML/login.html">
         <i class="far fa-user"></i>
@@ -67,6 +65,27 @@
   <div class="bottom-title">
     <p>CARRINHO DE COMPRAS</p>
   </div>
+
+
+
+
+
+  <div class="products-container">
+    <div class="product-header">
+      <h5 class="product-title">PRODUCO</h5>
+      <h5 class="price">PREÇO</h5>
+      <h5 class="quantity">QUANTIDADE</h5>
+      <h5 class="total">TOTAL</h5>
+    </div>
+    <div class="products">
+
+    </div>
+  </div>
+
+
+
+
+
 
   <section class="content" id="content">
     <div class="cart">
@@ -238,5 +257,9 @@
       </strong>
     </div>
   </footer>
+
+  <script src="../JavaScript/functions.js" async></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
+
 </body>
 </html>

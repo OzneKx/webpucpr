@@ -239,12 +239,12 @@ function displayCart() {
   let cartCost = localStorage.getItem('totalCost');
 
   if (cartItems && productContainer) {
-    productContainer.innerHTML = '';
+    productContainer.innerHTML = ' ';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
         <div class="product">
 
-          <img src="../images/${item.image}.png">
+          <img src="../assets/images/${item.image}.png">
           <span>${item.name}</span>
         </div>
         <div class="price">$${item.price},00</div>
@@ -265,7 +265,6 @@ function displayCart() {
         </h4>
 
     `
-
   }
 }
 
