@@ -177,7 +177,7 @@ function onLoadCartNumbers() {
   let productNumber = localStorage.getItem('numberCart');
 
   if (productNumber) {
-    document.querySelector('.cart span').textContent = productNumber;
+    document.querySelector('.icon-cart span').textContent = productNumber;
   }
 }
 
@@ -189,10 +189,10 @@ function numberCart(product) {
 
   if (productNumber) {
     localStorage.setItem('numberCart', productNumber + 1);
-    document.querySelector('.cart span').textContent = productNumber + 1;
+    document.querySelector('.icon-cart span').textContent = productNumber + 1;
   } else {
     localStorage.setItem('numberCart', 1);
-    document.querySelector('.cart span').textContent = 1;
+    document.querySelector('.icon-cart span').textContent = 1;
   }
 }
 
@@ -235,51 +235,57 @@ function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
 
-  let productContainer = document.querySelector(".products");
+  let productContainer = document.querySelector(".container-cart");
+  let totalPriceContainer = document.querySelector(".total-price");
   let cartCost = localStorage.getItem('totalCost');
 
   if (cartItems && productContainer) {
     productContainer.innerHTML = ' ';
     Object.values(cartItems).map(item => {
       productContainer.innerHTML += `
-        <div class="product">
-
-          <img src="../assets/images/${item.image}.png">
-          <span>${item.name}</span>
-        </div>
-        <div class="price">$${item.price},00</div>
-        <div class="quantity"><span>${item.quantity}</span></div>
-        <div class="total">
-          ${item.quantity * item.price},00
+        <div class="cart">
+          <div class="product-name">
+            <img class="item-img" src="../assets/images/${item.image}">
+            <p><b>${item.name}</b></p>
+            <div class="quantidade">
+              <strong>Quantidade</strong>
+              <div class="cart-items">
+                <button class="add" type="submit">
+                  <i class="fas fa-plus"></i>
+                </button>
+                <div class="quantity"><span>${item.quantity}</span></div>
+                <button class="remove">
+                  <i class="fas fa-minus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="description">
+            <p>
+              ÓTIMA ESCOLHA :D <br>
+              Este instrumento é um dos melhores que temos aqui na loja!
+              Vários guitarristas profissionais amam seu som.
+            </p>
+          </div>
+          <div class="price">
+            <p>
+              &nbsp&nbspVALOR<br>
+              R$${item.price},00
+            </p>
+          </div>
         </div>
       `
+
+      totalPriceContainer.innerHTML += `
+        ${cartCost},00
+      `
     });
-
-    productContainer.innerHTML += `
-      <div class="basketTotalContainer">
-        <h4 class="basketTotalTitle">
-          Basket Total
-        </h4>
-        <h4 class="basketTotal">
-          $${cartCost},00
-        </h4>
-
-    `
   }
 }
 
 
 onLoadCartNumbers();
 displayCart();
-
-
-
-
-
-
-
-
-
 
 
 function initMap() {
