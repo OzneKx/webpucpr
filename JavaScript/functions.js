@@ -25,6 +25,7 @@ for (let c = 0; c < cart.length; c++) {
   cart[c].addEventListener('click', () => {
     numberCart(products[c]);
     setItems(products[c]);
+    totalCost(products[c]);
   });
 }
 
@@ -63,7 +64,6 @@ function setItems(product) {
         [product.name]: product
       }
     }
-
     cartItems[product.name].quantity += 1;
   } else {
     product.inCart = 1;
@@ -75,9 +75,42 @@ function setItems(product) {
   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
 
+function totalCost(product) {
+  let cartCost = localStorage.getItem('totalCost');
+
+  if (cartCost != null) {
+    cartCost = parseInt(cartCost);
+    localStorage.setItem("totalCost", cartCost + product.price);
+  } else {
+    localStorage.setItem("totalCost", product.price);
+  }
+}
+
+
+function displayCart() {
+  let cartItems = localStorage.getItem("productsInCart");
+  cartItems = JSON.parse(cartItems);
+
+  let productContainer = document.querySelector(".products-container");
+
+  console.log(cartItems);
+  if (cartItems && productContainer) {
+    productContainer.innerHTML = '';
+    Object.values(cartItems),map(item => {
+      productContainer.innerHTML += `
+        <div class="product">
+
+          <img src="../images/${item.image}.png">
+          <span>${item.name}M/span>
+        </div>
+      `
+    })
+  }
+}
+
 
 onLoadCartNumbers();
-
+displayCart();
 
 
 
