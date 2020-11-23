@@ -109,6 +109,60 @@ let products = [
     price: 1700,
     quantity: 0
   },
+  {
+    name: 'PALHETA AC/DC',
+    image: 'palheta1.png',
+    price: 19,
+    quantity: 0
+  },
+  {
+    name: 'PALHETA FENDER',
+    image: 'palheta2.png',
+    price: 15,
+    quantity: 0
+  },
+  {
+    name: 'PALHETA THE DOORS',
+    image: 'palheta3.png',
+    price: 25,
+    quantity: 0
+  },
+  {
+    name: 'AMPLIFICADOR MARSHALL',
+    image: 'amplificador1.png',
+    price: 480,
+    quantity: 0
+  },
+  {
+    name: 'AMPLIFICADOR METEORO',
+    image: 'amplificador2.png',
+    price: 380,
+    quantity: 0
+  },
+  {
+    name: 'AMPLIFICADOR ORANGE',
+    image: 'amplificador3.png',
+    price: 325,
+    quantity: 0
+  },
+  {
+    name: 'JAQUETA EDDIE VAN HALEN',
+    image: 'camisa1.png',
+    price: 59,
+    quantity: 0
+  },
+  {
+    name: 'JAQUETA GUITART',
+    image: 'camisa2.png',
+    price: 49,
+    quantity: 0
+  },
+  {
+    name: 'JAQUETA JIMI HENDRIX',
+    image: 'ShirtHenjin.png',
+    price: 45,
+    quantity: 0
+  },
 ]
 
 for (let c = 0; c < cart.length; c++) {
