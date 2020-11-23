@@ -252,13 +252,7 @@ function displayCart() {
             <div class="quantidade">
               <strong>Quantidade</strong>
               <div class="cart-items">
-                <button class="add" type="submit">
-                  <i class="fas fa-plus"></i>
-                </button>
                 <div class="quantity"><span>${item.quantity}</span></div>
-                <button class="remove">
-                  <i class="fas fa-minus"></i>
-                </button>
               </div>
             </div>
           </div>
